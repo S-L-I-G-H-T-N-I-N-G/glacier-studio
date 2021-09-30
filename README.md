@@ -1,1 +1,1 @@
-# glacierstudio
+# glacier-studio
