@@ -2,4 +2,4 @@
 
 欢迎
 
-[点击进入官网](README.md)
+[点击进入官网](index.html)
