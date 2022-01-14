@@ -5,13 +5,12 @@ body {
 a {
     text-decoration: none;
 }
-.head {
+.top-bar {
     width:100%;
     height: 4rem;
     background-color: #00ccff;
 }
-.head-logo {
-    
+.top-bar-logo {
     line-height: 4rem;
     height: 4rem;
     color: white;
@@ -19,7 +18,7 @@ a {
     height: 100%;
     margin-left: 0.5rem;
 }
-.head-goto-codemao {
+.top-bar-goto-codemao {
     line-height: 4rem;
     height: 4rem;
     float: right;
