@@ -2,4 +2,4 @@
 
 欢迎
 
-[点击进入官网](index.html)
+[点击进入官网](https://glaciercdm.github.io)
