@@ -1,5 +1,6 @@
 
 ul.top-bar {
+    display: block;
     padding: 0%;
 }
 li.top-bar {

@@ -13,6 +13,11 @@ div.top-bar {
     float: left;
     color: white;
 }
+@media only screen and (min-width: 600px){
+    .menu {
+        display: none;
+    }
+}
 .top-bar-logo {
     line-height: 4rem;
     float: left;
@@ -24,6 +29,12 @@ ul.top-bar {
     list-style: none;
     float: left;
     margin: 0;
+    display: none;
+}
+@media only screen and (min-width: 600px) {
+    ul.top-bar {
+        display: block;
+    }
 }
 li.top-bar {
     float: left;
