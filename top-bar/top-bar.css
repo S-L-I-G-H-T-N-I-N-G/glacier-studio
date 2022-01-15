@@ -29,6 +29,7 @@ ul.top-bar {
     list-style: none;
     float: left;
     margin: 0;
+    padding: 0;
     display: none;
 }
 @media only screen and (min-width: 600px) {
@@ -37,9 +38,17 @@ ul.top-bar {
     }
 }
 li.top-bar {
-    float: left;
-    margin: 0;
-    display: block;
+    width:100vw;
+    background-color: #00CCFF;
+}
+@media only screen and (min-width: 600px) {
+    li.top-bar {
+        width: auto;
+        float: left;
+        margin: 0;
+        display: block;
+        background-color: #00000000;
+    }
 }
 .top-bar-button {
     line-height: 4rem;
@@ -56,4 +65,7 @@ a.top-bar-goto-codemao {
     float: right;
     margin-right: 0.5rem;
     color:#FEC433;
+}
+ul.top-menu {
+    top: 4rem;
 }
