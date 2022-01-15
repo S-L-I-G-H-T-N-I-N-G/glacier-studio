@@ -1,16 +1,22 @@
 div.top-bar {
-    width:100%;
     height: 4rem;
     position: -webkit-sticky;
     position: sticky;
     top: 0%;
     background-color: #00CCFF;
 }
-.top-bar-logo {
-    height: 4rem;
+.menu {
     line-height: 4rem;
-    color: white;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 4rem;
     float: left;
+    color: white;
+}
+.top-bar-logo {
+    line-height: 4rem;
+    float: left;
+    color: white;
     font-size: 2.5rem;
     margin-left: 0.5rem;
 }
@@ -20,13 +26,11 @@ ul.top-bar {
     margin: 0;
 }
 li.top-bar {
-    height: 4rem;
     float: left;
     margin: 0;
     display: block;
 }
 .top-bar-button {
-    height: 4rem;
     line-height: 4rem;
     display: block;
     color: white;
@@ -37,7 +41,6 @@ a.top-bar-button:hover {
     background-color:#00BBEE;
 }
 a.top-bar-goto-codemao {
-    height: 4rem;
     line-height: 4rem;
     float: right;
     margin-right: 0.5rem;
