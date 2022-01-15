@@ -29,11 +29,12 @@ ul.top-bar {
     list-style: none;
     float: left;
     margin: 0;
-    padding: 0;
+    padding-left: 0;
     display: none;
 }
 @media only screen and (min-width: 600px) {
     ul.top-bar {
+        padding-left: 4rem;
         display: block;
     }
 }
