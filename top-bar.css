@@ -2,22 +2,46 @@
 body {
     margin: 0;
 }
-.top-bar {
+div.top-bar {
     width:100%;
     height: 4rem;
-    background-color: #00ccff;
+    position: sticky;
+    background-color: #00CCFF;
 }
 .top-bar-logo {
-    line-height: 4rem;
     height: 4rem;
+    line-height: 4rem;
     color: white;
+    float: left;
     font-size: 2.5rem;
-    height: 100%;
     margin-left: 0.5rem;
 }
-.top-bar-goto-codemao {
-    line-height: 4rem;
+ul.top-bar {
+    list-style: none;
+    float: left;
+    margin: 0;
+}
+li.top-bar {
     height: 4rem;
+    float: left;
+    margin: 0;
+    display: block;
+}
+.top-bar-button {
+    height: 4rem;
+    line-height: 4rem;
+    display: block;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+a.top-bar-button:hover {
+    background-color:#00BBEE;
+}
+a.top-bar-goto-codemao {
+    height: 4rem;
+    line-height: 4rem;
     float: right;
     margin-right: 0.5rem;
+    color:#FEC433;
 }
