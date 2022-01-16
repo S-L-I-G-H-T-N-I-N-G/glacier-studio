@@ -13,9 +13,6 @@ div.top-bar {
     float: left;
     color: white;
 }
-#menu-out-bar {
-    display: none;
-}
 @media only screen and (min-width: 600px){
     .menu-button {
         display: none;
@@ -39,10 +36,13 @@ div.top-bar {
         padding-left: 4rem;
     }
 }
-
 #menu-out-bar {
-    top: 4rem;
-    position: fixed;
+    position: relative;
+    //bottom: 12rem;
+}
+@keyframes open-menu {
+    from {bottom: 12rem;}
+    to {bottom: 0;}
 }
 li.top-bar {
     width:100vw;
