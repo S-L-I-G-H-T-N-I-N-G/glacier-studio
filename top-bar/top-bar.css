@@ -37,8 +37,10 @@ div.top-bar {
     }
 }
 #menu-out-bar {
-    position: relative;
-    //bottom: 12rem;
+    position: absolute;
+    top: 4rem;
+    right: 100%;
+    transition: right 0.5s;
 }
 @keyframes open-menu {
     from {bottom: 12rem;}
