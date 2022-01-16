@@ -39,6 +39,11 @@ div.top-bar {
         padding-left: 4rem;
     }
 }
+
+#menu-out-bar {
+    top: 4rem
+    position:absolute;
+}
 li.top-bar {
     width:100vw;
     background-color: #00CCFF;
