@@ -41,8 +41,8 @@ div.top-bar {
 }
 
 #menu-out-bar {
-    top: 4rem
-    position:absolute;
+    top: 4rem;
+    position: fixed;
 }
 li.top-bar {
     width:100vw;
