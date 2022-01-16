@@ -44,10 +44,6 @@ div.top-bar {
     right: 100%;
     transition: right 0.5s;
 }
-@keyframes open-menu {
-    from {bottom: 12rem;}
-    to {bottom: 0;}
-}
 li.top-bar {
     width:100vw;
     background-color: #00CCFF;

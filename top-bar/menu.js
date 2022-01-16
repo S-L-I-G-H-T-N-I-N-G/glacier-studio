@@ -19,7 +19,6 @@ function watchWindowSize() {
     if (lastWidth < 600 && 600 <= width) {
         document.getElementById("menu-in-bar")
         .appendChild(menu);
-
         closeMenu();
     }
     else if (width < 600 && 600 <= lastWidth) {
