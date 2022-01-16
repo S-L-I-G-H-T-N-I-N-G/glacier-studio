@@ -37,8 +37,10 @@ div.top-bar {
     }
 }
 #menu-out-bar {
-    position: absolute;
+    background-color: #FF000000;
+    position: fixed;
     top: 4rem;
+    bottom: 0rem;
     right: 100%;
     transition: right 0.5s;
 }
