@@ -5,7 +5,7 @@ div.top-bar {
     top: 0%;
     background-color: #00CCFF;
 }
-.menu {
+.menu-button {
     line-height: 4rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -13,8 +13,11 @@ div.top-bar {
     float: left;
     color: white;
 }
+#menu-out-bar {
+    display: none;
+}
 @media only screen and (min-width: 600px){
-    .menu {
+    .menu-button {
         display: none;
     }
 }
@@ -25,17 +28,15 @@ div.top-bar {
     font-size: 2.5rem;
     margin-left: 0.5rem;
 }
-ul.top-bar {
+#menu {
     list-style: none;
     float: left;
     margin: 0;
     padding-left: 0;
-    display: none;
 }
 @media only screen and (min-width: 600px) {
-    ul.top-bar {
+    #menu {
         padding-left: 4rem;
-        display: block;
     }
 }
 li.top-bar {

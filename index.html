@@ -9,23 +9,27 @@
     </head>
     <body>
         <div class="top-bar">
-            <div class="menu" onclick="showMenu()">≡</div>
+            <div class="menu-button" onclick="showMenu()">≡</div>
             <a class="top-bar-logo" href="/">冰川工作室</a>
-            <ul class="top-bar" id="menu">
-                <li style="background-color:#00BBEE" class="top-bar">
-                    <a class="top-bar-button" href="/">首页</a>
-                </li>
-                <li class="top-bar">
-                    <a class="top-bar-button" href="/about">关于</a>
-                </li>
-                <li class="top-bar">
-                    <a class="top-bar-button" href="/join-in">加入</a>
-                </li>
-            </ul>
-            <script src="/top-bar/menu.js"></script>
+            <div id="menu-in-bar">
+            </div>
             <a class="top-bar-goto-codemao" id="top-bar-goto-codemao"
             target="_blank" href="https://shequ.codemao.cn/work_shop/640">
             转到编程猫</a>
+            <div id="menu-out-bar">
+                <ul id="menu">
+                    <li style="background-color:#00BBEE" class="top-bar">
+                        <a class="top-bar-button" href="/">首页</a>
+                    </li>
+                    <li class="top-bar">
+                        <a class="top-bar-button" href="/about">关于</a>
+                    </li>
+                    <li class="top-bar">
+                        <a class="top-bar-button" href="/join-in">加入</a>
+                    </li>
+                </ul>
+            </div>
+            <script src="/top-bar/menu.js"></script>
         </div>
     </body>
 </html>

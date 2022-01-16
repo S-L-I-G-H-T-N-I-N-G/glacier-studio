@@ -1,31 +1,30 @@
 var lastWidth;
 
 function showMenu() {
-    var menu = document.getElementById("menu");
-    var goto_codemao = document.getElementById("top-bar-goto-codemao");
-    if (menu.style.display == "block") {
-        menu.style.display = "none";
-        goto_codemao.style.display = "block";
-    }
-    else {
-        menu.style.display = "block";
-        goto_codemao.style.display = "none";
-    }
+    var menu_out_bar = document.getElementById("menu-out-bar");
+    if (menu_out_bar.style.display == "block")
+        menu_out_bar.style.display = "none";
+    else
+        menu_out_bar.style.display = "block";
 }
 
 function watchWindowSize() {
     var width = document.documentElement.offsetWidth;
     if (lastWidth < 600 && 600 <= width) {
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("menu").style.paddingLeft = "4rem";
-        document.getElementById("top-bar-goto-codemao")
-        .style.display = "block"
+        document.getElementById("menu-in-bar")
+        .appendChild(document.getElementById("menu"));
     }
     else if (width < 600 && 600 <= lastWidth) {
-        document.getElementById("menu").style.display = "none";
-        document.getElementById("menu").style.paddingLeft = "0";
+        menu_out_bar = document.getElementById("menu-out-bar")
+        menu_out_bar.appendChild(document.getElementById("menu"));
+        menu_out_bar.style.display = "none"
     }
     lastWidth = width;
 }
-watchWindowSize
 window.addEventListener("resize", watchWindowSize);
+watchWindowSize();
+
+if (lastWidth >= 600) {
+    document.getElementById("menu-in-bar")
+    .appendChild(document.getElementById("menu"));
+}
