@@ -1,6 +1,5 @@
 div.top-bar {
     height: 4rem;
-    position: -webkit-sticky;
     position: sticky;
     top: 0%;
     background-color: #00CCFF;
@@ -12,11 +11,6 @@ div.top-bar {
     font-size: 4rem;
     float: left;
     color: white;
-}
-@media only screen and (min-width: 600px){
-    .menu-button {
-        display: none;
-    }
 }
 .top-bar-logo {
     line-height: 4rem;
@@ -31,11 +25,6 @@ div.top-bar {
     margin: 0;
     padding-left: 0;
 }
-@media only screen and (min-width: 600px) {
-    #menu {
-        padding-left: 4rem;
-    }
-}
 #menu-out-bar {
     background-color: #00000088;
     position: fixed;
@@ -47,15 +36,6 @@ div.top-bar {
 li.top-bar {
     width:100vw;
     background-color: #00CCFF;
-}
-@media only screen and (min-width: 600px) {
-    li.top-bar {
-        width: auto;
-        float: left;
-        margin: 0;
-        display: block;
-        background-color: #00000000;
-    }
 }
 .top-bar-button {
     line-height: 4rem;
@@ -75,4 +55,22 @@ a.top-bar-goto-codemao {
 }
 ul.top-menu {
     top: 4rem;
+}
+@media only screen and (min-width: 600px) {
+    .menu-button {
+        display: none;
+    }
+    #menu {
+        padding-left: 4rem;
+    }
+    li.top-bar {
+        width: auto;
+        float: left;
+        margin: 0;
+        display: block;
+        background-color: #00000000;
+    }
+    .top-bar-button {
+        transition: background-color 0.5s;
+    }
 }
