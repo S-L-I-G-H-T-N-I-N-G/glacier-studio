@@ -1,26 +1,31 @@
 var width;
+var offsetWidth;
 var big = [];
 var small = [];
 
 function adjustLayout() {
-    var lastWidth = width;
     width = document.documentElement.clientWidth;
-    if (lastWidth < 600 && 600 <= width) adjustToBig();
-    else if (width < 600 && 600 <= lastWidth) adjustToSmall();
+    lastOffsetWidth = offsetWidth;
+    offsetWidth = document.documentElement.offsetWidth;
+    if (lastOffsetWidth < 600 && 600 <= offsetWidth) adjustToBig();
+    else if (offsetWidth < 600 && 600 <= lastOffsetWidth) adjustToSmall();
 }
 function adjustToBig() {
+    console.log("调为大布局");
     for (var i = 0;i < big.length;i++) {
         big[i]();
     }
 }
 function adjustToSmall() {
+    console.log("调为小布局");
     for (var i = 0;i < small.length;i++) {
         small[i]();
     }
 }
 
+window.addEventListener("resize", adjustLayout);
+
 window.addEventListener("load",function () {
-    window.addEventListener("resize", adjustLayout);
     adjustLayout();
     if (width < 600) adjustToSmall();
     else adjustToBig();

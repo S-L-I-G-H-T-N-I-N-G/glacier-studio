@@ -1,6 +1,6 @@
 function onBigScreen() {
     var title = document.getElementById("glacier-center-right-title");
-    title.style.fontSize = width * 8 / 100 + "px";
+    title.style.fontSize = width * 8 / 100 -0.01 + "px";
 }
 function onSmallScreen() {
     var title = document.getElementById("glacier-center-right-title");
