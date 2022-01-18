@@ -5,13 +5,13 @@
 .icon {
     width: 50%;
 }
-.glacier-center-right {
+#glacier-center-right {
     width: 50%;
     margin: auto;
-    font-size: 10vw;
 }
-.title {
+#glacier-center-right-title {
     margin-bottom: 1rem;
+    font-size: 10vw;
 }
 #join-in-button {
     padding: 0.5rem;
@@ -19,8 +19,12 @@
     color: white;
     background-color: #00CCFF;
 }
+#chose {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
 @media only screen and (min-width: 600px) {
-    .glacier-center {
+    #glacier-center {
         height: 40vw;
     }
     .icon {
@@ -28,18 +32,22 @@
         margin-left: 10%;
         float: left;
     }
-    .glacier-center-right {
+    #glacier-center-right {
         width: 40%;
         line-height: 14vw;
         float: left;
-        font-size: 8vw;
+        margin-right: 10%;
         margin-top: 4vw;
     }
-    .title {
+    #glacier-center-right-title {
         margin-bottom: 0;
+        font-size: 8vw;
     }
     #join-in-button {
         padding: 1rem;
         font-size: 2rem;
+    }
+    #chose-title {
+        margin-top: 0%;
     }
 }

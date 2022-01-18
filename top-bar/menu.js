@@ -14,21 +14,14 @@ function openMenu() {
 function closeMenu() {
     menu_out_bar.style.right = "100%";
 }
-function watchWindowSize() {
-    var width = document.documentElement.offsetWidth;
-    if (lastWidth < 600 && 600 <= width) {
-        document.getElementById("menu-in-bar")
-        .appendChild(menu);
-        closeMenu();
-    }
-    else if (width < 600 && 600 <= lastWidth) {
-        menu_out_bar.appendChild(menu);
-    }
-    lastWidth = width;
-}
-window.addEventListener("resize", watchWindowSize);
-watchWindowSize();
-
 if (lastWidth >= 600) {
     document.getElementById("menu-in-bar").appendChild(menu);
 }
+
+big.push(function() {
+    document.getElementById("menu-in-bar").appendChild(menu);
+    closeMenu();
+});
+small.push(function() {
+    menu_out_bar.appendChild(menu);
+});
