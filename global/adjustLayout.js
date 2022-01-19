@@ -1,23 +1,20 @@
 var width;
-var offsetWidth;
+var lastInnerWidth;
 var big = [];
 var small = [];
 
 function adjustLayout() {
     width = document.documentElement.clientWidth;
-    lastOffsetWidth = offsetWidth;
-    offsetWidth = document.documentElement.offsetWidth;
-    if (lastOffsetWidth < 600 && 600 <= offsetWidth) adjustToBig();
-    else if (offsetWidth < 600 && 600 <= lastOffsetWidth) adjustToSmall();
+    if (lastInnerWidth < 600 && 600 <= innerWidth) adjustToBig();
+    else if (innerWidth < 600 && 600 <= lastInnerWidth) adjustToSmall();
+    lastInnerWidth = innerWidth;
 }
 function adjustToBig() {
-    console.log("调为大布局");
     for (var i = 0;i < big.length;i++) {
         big[i]();
     }
 }
 function adjustToSmall() {
-    console.log("调为小布局");
     for (var i = 0;i < small.length;i++) {
         small[i]();
     }
