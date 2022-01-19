@@ -22,8 +22,8 @@ function adjustToSmall() {
 
 window.addEventListener("resize", adjustLayout);
 
-window.addEventListener("load",function () {
-    adjustLayout();
+$(document).ready(function () {
+	adjustLayout();
     if (width < 600) adjustToSmall();
     else adjustToBig();
-})
+});
