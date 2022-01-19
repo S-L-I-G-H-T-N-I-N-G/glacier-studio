@@ -1,0 +1,51 @@
+#chose {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.work {
+    width: 16rem;
+    margin: 0.5rem;
+    display: inline-block;
+    background-color: #EEEEEE;
+}
+.work-icon{
+    width: 16rem;
+    height: 16rem;
+}
+.work-name {
+    color: black;
+    text-align: left;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 0.3rem;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.work-author {
+    width: 16rem;
+    height: 3rem;
+    text-align: left;
+}
+.work-author-avatar {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+}
+.work-author-name {
+    color: black;
+    width: 12.5rem;
+    line-height: 3rem;
+    float: left;
+    text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media only screen and (min-width: 600px) {
+    #chose-title {
+        margin-top: 0%;
+    }
+}
