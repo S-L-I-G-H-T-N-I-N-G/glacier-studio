@@ -13,6 +13,7 @@
                 top: 4rem;
             }
         </style>
+        <script src="js/adjust-layout.js"></script>
     </head>
     <body>
         <object id="page" data="pages/home/"></object>
@@ -31,8 +32,11 @@
             <img id="top-bar--menu--button" width="4rem" height="4rem"
             src="res/svg/top-bar--menu--button.svg" alt="菜单按钮"
             onclick="onClickTopBarMenuButton()"></img>
-            <text id="top-bar--title">冰川工作室</text><br>
+            <text id="top-bar--title">冰川工作室</text>
             <script src="js/top-bar--menu.js"></script>
         </div>
+        <script>
+            adjustLayoutFirstTime()
+        </script>
     </body>
 </html>

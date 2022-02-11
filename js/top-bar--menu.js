@@ -15,3 +15,11 @@ function openTopBarMenu() {
 function closeTopBarMenu() {
     menuNutton.style.top = "calc(4rem - 100vh)"
 }
+
+big.push(function () {
+    document.getElementById("top-bar").appendChild(document.getElementById("top-bar--navigation-bar"))
+    closeTopBarMenu()
+})
+small.push(function () {
+    document.getElementById("top-bar--menu").appendChild(document.getElementById("top-bar--navigation-bar"))
+})
