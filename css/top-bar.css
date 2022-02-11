@@ -1,0 +1,37 @@
+
+#top-bar {
+    width: 100%;
+    height: 4rem;
+    position: fixed;
+    color: white;
+    background: linear-gradient(to right, #00CCFF , #00E5E5);
+}
+#top-bar--menu--button {
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    float: left;
+}
+#top-bar--title {
+    line-height: 4rem;
+    float: left;
+    font-size: 2rem;
+}
+#top-bar--menu {
+    top: calc(4rem - 100vh);
+    height: calc(100vh - 4rem);
+    width: 100%;
+    position: fixed;
+    background-color: #00000088;
+}
+#top-bar--navigation-bar {
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    color: white;
+}
+.top-bar--navigation-button {
+    line-height: 4rem;
+    padding-left: 1rem;
+}
