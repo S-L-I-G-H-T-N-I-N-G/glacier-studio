@@ -5,23 +5,34 @@
         <link rel="shortcut icon" href="res/icon/icon-skyblue.svg">
         <link rel="stylesheet" href="css/global.css">
         <link rel="stylesheet" href="css/top-bar.css">
+        <style>
+            #page {
+                width: 100%;
+                height: calc(100vh - 4rem);
+                position: fixed;
+                top: 4rem;
+            }
+        </style>
     </head>
     <body>
-        <div id="top-bar--menu">
+        <object id="page" data="pages/home/"></object>
+        <div id="top-bar--menu" onclick="closeTopBarMenu()">
             <ul id="top-bar--navigation-bar">
-                <li class="top-bar--navigation-button">
+                <li id="top-bar--navigation-button--home" class="top-bar--navigation-button top-bar--navigation-button--choice" onclick="changPage('home')">
                     主页
                 </li>
-                <li class="top-bar--navigation-button">
+                <li id="top-bar--navigation-button--join-in" class="top-bar--navigation-button" onclick="changPage('join-in')">
                     加入
                 </li>
             </ul>
+            <script src="js/change--page.js"></script>
         </div>
         <div id="top-bar">
-            <text id="top-bar--menu--button" onclick="onClickMenuNutton()">≡</text>
+            <img id="top-bar--menu--button" width="4rem" height="4rem"
+            src="res/svg/top-bar--menu--button.svg" alt="菜单按钮"
+            onclick="onClickTopBarMenuButton()"></img>
             <text id="top-bar--title">冰川工作室</text><br>
+            <script src="js/top-bar--menu.js"></script>
         </div>
-        <div style="height: calc(100vh - 4rem);"></div>
-        <script src="js/top-bar--menu.js"></script>
     </body>
 </html>

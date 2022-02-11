@@ -1,10 +1,17 @@
 var menuNutton = document.getElementById("top-bar--menu")
-function onClickMenuNutton() {
-    var style = menuNutton.style
-    style.transition = "top 1s"
-    if (style.top == "4rem") {
-        style.top = "calc(4rem - 100vh)"
+function onClickTopBarMenuButton() {
+    if (topBarMenuIsOpen()) {
+        closeTopBarMenu()
     } else {
-        style.top = "4rem"
+        openTopBarMenu()
     }
+}
+function topBarMenuIsOpen() {
+    return menuNutton.style.top == "4rem"
+}
+function openTopBarMenu() {
+    menuNutton.style.top = "4rem"
+}
+function closeTopBarMenu() {
+    menuNutton.style.top = "calc(4rem - 100vh)"
 }
