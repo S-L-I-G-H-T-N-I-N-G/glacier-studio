@@ -1,19 +1,22 @@
 #chose {
     margin-left: 5vw;
     margin-right: 5vw;
+    text-align: center;
 }
-.work {
+.chose--work {
     width: 16rem;
     margin: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
     display: inline-block;
-    background-color: #EEEEEE;
+    background-color: #00000022;
 }
-.work-icon{
+.chose--work--icon{
     width: 16rem;
     height: 16rem;
 }
-.work-name {
-    color: black;
+.chose--work--name {
+    color: white;
     text-align: left;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -22,20 +25,20 @@
 	overflow: hidden;
     text-overflow: ellipsis;
 }
-.work-author {
+.chose--work--author {
     width: 16rem;
     height: 3rem;
     text-align: left;
 }
-.work-author-avatar {
+.chose--work--author--avatar {
     float: left;
     width: 2rem;
     height: 2rem;
     margin: 0.5rem;
     border-radius: 100%;
 }
-.work-author-name {
-    color: black;
+.chose--work--author--name {
+    color: white;
     width: 12.5rem;
     line-height: 3rem;
     float: left;
@@ -45,7 +48,7 @@
     text-overflow: ellipsis;
 }
 @media only screen and (min-width: 600px) {
-    #chose-title {
+    #chose--title {
         margin-top: 0%;
     }
 }
