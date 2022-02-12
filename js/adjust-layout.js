@@ -20,10 +20,10 @@ function adjustToSmall() {
     }
 }
 
-window.addEventListener("resize", adjustLayout);
+window.addEventListener("resize", adjustLayout)
 
-$(document).ready(function () {
-	adjustLayout();
-    if (width < 600) adjustToSmall();
-    else adjustToBig();
-});
+function adjustLayoutFirstTime() {
+    adjustLayout()
+    if (width < 600) adjustToSmall()
+    else adjustToBig()
+}
