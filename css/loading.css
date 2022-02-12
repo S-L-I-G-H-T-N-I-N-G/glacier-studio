@@ -1,0 +1,31 @@
+#loading {
+    height: calc(100vh - 4rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes loading--circle--change-color {
+    0% {
+        background: white;
+    }
+    25% {
+        background: white;
+    }
+    75% {
+        background: #00CCFF;
+    }
+    100% {
+        background: #00CCFF;
+    }
+}
+#loading--circle {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    animation: loading--circle--change-color 0.5s linear 0s infinite alternate;
+    background: white;
+}
+#loading--text {
+    color: white;
+    font-size: 3rem;
+}

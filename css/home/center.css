@@ -1,0 +1,44 @@
+#center--icon {
+    width: 50%;
+    margin-left: 25%;
+}
+#center--right {
+    text-align: center;
+}
+#center--right--title {
+    font-size: 10vw;
+    color: white;
+}
+#center--right--jion-in--area {
+    margin-top: 1.5rem;
+}
+#center--right--jion-in--button {
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 0.5rem;
+    background: #00000022;
+    text-decoration: none;
+}
+@media only screen and (min-width: 600px) {
+    #center--icon {
+        width: 40%;
+        margin-left: 10%;
+        float: left;
+    }
+    #center--right {
+        line-height: 20vw;
+        float: left;
+    }
+    #center--right--title {
+        font-size: 8vw;
+    }
+    #center--right--jion-in--button {
+        font-size: 2.5rem;
+        padding: 1rem;
+        color: white;
+        border-radius: 0.5rem;
+        background: #00000022;
+        text-decoration: none;
+    }
+}
