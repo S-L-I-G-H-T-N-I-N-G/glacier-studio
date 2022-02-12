@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/top-bar.css">
         <link rel="stylesheet" href="css/loading.css">
         <style>
-            #page {
+            #page--content {
                 overflow-y: auto;
                 width: 100%;
                 height: calc(100vh - 4rem);
@@ -21,22 +21,26 @@
         <script src="js/http.js"></script>
     </head>
     <body>
-        <div id="page">
-            <div id="loading">
-                <div id="loading--circle"></div>
-                <text id="loading--text">加载中……</text>
+		<div>
+            <div id="page--content">
+                <div id="loading">
+                    <div id="loading--circle"></div>
+                    <text id="loading--text">加载中……</text>
+                </div>
             </div>
-        </div>
+		        <div id="page--css"></div>
+			<div id="page--js"></div>
+		</div>
         <div id="top-bar--menu" onclick="closeTopBarMenu()">
             <ul id="top-bar--navigation-bar">
-                <li id="top-bar--navigation-button--home" class="top-bar--navigation-button top-bar--navigation-button--choice" onclick="changPage('home')">
+                <li id="top-bar--navigation-button--home" class="top-bar--navigation-button top-bar--navigation-button--choice" onclick="changpage--content('home')">
                     主页
                 </li>
-                <li id="top-bar--navigation-button--join-in" class="top-bar--navigation-button" onclick="changPage('join-in')">
+                <li id="top-bar--navigation-button--join-in" class="top-bar--navigation-button" onclick="changpage--content('join-in')">
                     加入
                 </li>
             </ul>
-            <script src="js/change--page.js"></script>
+            <script src="js/change--page--content.js"></script>
         </div>
         <div id="top-bar">
             <img id="top-bar--menu--button" width="4rem" height="4rem"
