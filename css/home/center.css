@@ -24,13 +24,19 @@
     #center {
         height: 40vw;
     }
+    #center--icon--area {
+        width: 50%;
+        height: 1px;
+        float: left;
+    }
     #center--icon {
-        width: 40%;
+        width: 80%;
         margin-left: 10%;
         float: left;
     }
     #center--right {
         line-height: 20vw;
+        height: 40vw;
         float: left;
     }
     #center--right--title {

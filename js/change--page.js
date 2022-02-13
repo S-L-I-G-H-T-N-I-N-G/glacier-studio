@@ -3,17 +3,19 @@ var changPageTime
 var ERROR = -1
 
 var requestsLists = {
-	"home":["css/home/center.css", "css/home/chose.css"]
+	"home": ["css/home/center.css", "css/home/chose.css", "pages/home.html"],
+	"join-in": ["pages/join-in.html"]
 }
 
 changPage("home")
 
 function changPage(pageName) {
-    document.getElementById("page").innerHTML = loading
+    document.getElementById("page--content").innerHTML = loading
     changPageTime = new Date().getTime()
 
+	var loadingText = document.getElementById("loading--text")
     var topBarNavigationButtons = document.getElementsByClassName("top-bar--navigation-button")
-	var requestsList = requestsLists["home"]
+	var requestsList = requestsLists[pageName]
 	var requestsNumber = 0
 	
 	var page
@@ -27,31 +29,30 @@ function changPage(pageName) {
         }
     }
 
-	requestsList.push("pages/" +pageName + ".html")
 	for (var i = 0;i < requestsList.length;i++) {
-        (function (time) {
+        (function (time, respondUrl) {
             httpRequest({
                 httpUrl : requestsList[i],
                 type : 'get'
             },function(respondDada) {
-                if (isValid(time))
-                    document.getElementById("page--content").innerHTML = respondDada
+                if (time == changPageTime && requestsNumber != ERROR)
+                    ok(respondUrl, respondDada)
             }, function(status) {
-                if (isValid(time)) {
-				    requestsNumber = ERROR
-                    document.getElementById("loading--circle").style.display = "none"
-                    document.getElementById("loading--text").innerText = "错误：" + status
-                }
+                if (time == changPageTime) {
+					if (requestsNumber == ERROR) {
+						loadingText.innerText = loading.innerHTML + "<br>错误：" + status
+					} else {
+						requestsNumber = ERROR
+						document.getElementById("loading--circle").style.display = "none"
+						loadingText.innerText = "错误：" + status
+					}
+				}
             })
-        })(changPageTime)
+        })(changPageTime, requestsList[i])
 	}
-	function isValid(time) {
-		return time == changPageTime && requestsNumber != ERROR
-	}
-	function ok(respondUrl,respondDada) {
+	function ok(respondUrl, respondDada) {
 		requestsNumber++
-		
-		switch (respondUrl[0]) {
+		switch (respondUrl.charAt(0)) {
 			case 'p':
 				page = respondDada
 				break

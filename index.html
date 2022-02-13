@@ -21,7 +21,7 @@
         <script src="js/http.js"></script>
     </head>
     <body>
-		<div>
+		<div id="page">
             <div id="page--content">
                 <div id="loading">
                     <div id="loading--circle"></div>
@@ -33,14 +33,14 @@
 		</div>
         <div id="top-bar--menu" onclick="closeTopBarMenu()">
             <ul id="top-bar--navigation-bar">
-                <li id="top-bar--navigation-button--home" class="top-bar--navigation-button top-bar--navigation-button--choice" onclick="changpage--content('home')">
+                <li id="top-bar--navigation-button--home" class="top-bar--navigation-button" onclick="changPage('home')">
                     主页
                 </li>
-                <li id="top-bar--navigation-button--join-in" class="top-bar--navigation-button" onclick="changpage--content('join-in')">
+                <li id="top-bar--navigation-button--join-in" class="top-bar--navigation-button" onclick="changPage('join-in')">
                     加入
                 </li>
             </ul>
-            <script src="js/change--page--content.js"></script>
+            <script src="js/change--page.js"></script>
         </div>
         <div id="top-bar">
             <img id="top-bar--menu--button" width="4rem" height="4rem"

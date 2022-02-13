@@ -15,7 +15,6 @@ function httpRequest(paramObj,fun,errFun) {
 		requestData += name + '='+ paramData[name] + '&';
 	}
 	requestData = requestData == '' ? '' : requestData.substring(0,requestData.length - 1);
-	console.log(requestData)
 	
 	xmlhttp.onreadystatechange = function() {
 		if (xmlhttp.readyState == 4) {
