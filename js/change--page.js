@@ -39,12 +39,13 @@ function changPage(pageName) {
                     ok(respondUrl, respondDada)
             }, function(status) {
                 if (time == changPageTime) {
+					var errorMessage = "<p>文件" + respondUrl + "请求失败：" + status + "</p>"
 					if (requestsNumber == ERROR) {
-						loadingText.innerHTML = loadingText.innerHTML + "<p>文件" + respondUrl + "请求失败：" + status + "</p>"
+						loadingText.innerHTML = loadingText.innerHTML + errorMessage
 					} else {
 						requestsNumber = ERROR
 						document.getElementById("loading--circle").style.display = "none"
-						loadingText.innerHTML = "<p>文件" + respondUrl + "请求失败：" + status + "</p>"
+						loadingText.innerHTML = errorMessage
 					}
 				}
             })
@@ -76,6 +77,9 @@ function changPage(pageName) {
 			 css.innerHTML = csses[i]
 			 style.appendChild(css)
 		}
+
+
+		
 		document.getElementById("page--content").innerHTML = page
 		
 		var script = document.getElementById("page--js")
