@@ -1,4 +1,3 @@
-
 function httpRequest(paramObj,fun,errFun) {
 	var xmlhttp = null
 		xmlhttp = new XMLHttpRequest()
@@ -7,11 +6,11 @@ function httpRequest(paramObj,fun,errFun) {
 		return;
 	}
 	var httpType = (paramObj.type || 'GET').toUpperCase();
-	var dataType = paramObj.dataType || 'json';
-	var httpUrl = paramObj.httpUrl || '';
+	var dataType = paramObj.dataType || 'json'
+	var httpUrl = paramObj.httpUrl || ''
 	var async = paramObj.async || true;
-	var paramData = paramObj.data || [];
-	var requestData = '';
+	var paramData = paramObj.data || []
+	var requestData = ''
 	for(var name in paramData) {
 		requestData += name + '='+ paramData[name] + '&';
 	}
@@ -31,9 +30,9 @@ function httpRequest(paramObj,fun,errFun) {
 	if(httpType == 'GET') {
 		xmlhttp.open("GET",httpUrl,async);
 		xmlhttp.send(null);
-	} else if (httpType == 'POST'){
-		xmlhttp.open("POST",httpUrl,async);
-		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded"); 
-		xmlhttp.send(requestData); 
+	} else if (httpType == 'POST') {
+		xmlhttp.open("POST",httpUrl,async)
+		xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xmlhttp.send(requestData)
 	}
 }
