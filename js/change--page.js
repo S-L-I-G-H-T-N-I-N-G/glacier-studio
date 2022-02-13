@@ -40,11 +40,11 @@ function changPage(pageName) {
             }, function(status) {
                 if (time == changPageTime) {
 					if (requestsNumber == ERROR) {
-						loadingText.innerText = loading.innerHTML + "<br>错误：" + status
+						loadingText.innerHTML = loadingText.innerHTML + "<p>文件" + respondUrl + "请求失败：" + status + "</p>"
 					} else {
 						requestsNumber = ERROR
 						document.getElementById("loading--circle").style.display = "none"
-						loadingText.innerText = "错误：" + status
+						loadingText.innerHTML = "<p>文件" + respondUrl + "请求失败：" + status + "</p>"
 					}
 				}
             })
