@@ -3,7 +3,13 @@ var changPageTime
 var ERROR = -1
 
 var requestsLists = {
-	"home": ["css/home/center.css", "css/home/chose.css", "pages/home.html"],
+	"home": [
+		"css/home/center.css",
+		"css/home/chose.css",
+		"pages/home.html",
+		"js/home/set--chose--work.js",
+		"res/home/chose--work-list.json"
+	],
 	"join-in": ["pages/join-in.html"]
 }
 
@@ -19,8 +25,9 @@ function changPage(pageName) {
 	var requestsNumber = 0
 	
 	var page
-	var csses = []
-	var jses = []
+	var css = []
+	var js = []
+	var res = []
 	
     for (var i = 0;i < topBarNavigationButtons.length;i++) {
         topBarNavigationButtons[i].className = "top-bar--navigation-button"
@@ -34,7 +41,7 @@ function changPage(pageName) {
             httpRequest({
                 httpUrl : requestsList[i],
                 type : 'get'
-            },function(respondDada) {
+            }, function(respondDada) {
                 if (time == changPageTime && requestsNumber != ERROR)
                     ok(respondUrl, respondDada)
             }, function(status) {
@@ -53,15 +60,22 @@ function changPage(pageName) {
 	}
 	function ok(respondUrl, respondDada) {
 		requestsNumber++
+		var data = {
+			"id": respondUrl.split("/").slice(-1)[0].split(".")[0],
+			"content": respondDada
+		}
 		switch (respondUrl.charAt(0)) {
 			case 'p':
 				page = respondDada
 				break
 			case 'c':
-				csses.push(respondDada)
+				css.push(data)
 				break
 			case 'j':
-				jses.push(respondDada)
+				js.push(data)
+				break
+			case 'r':
+				res.push(data)
 				break
 		}
 		if (AllRespondFinished()) writePageCode()
@@ -70,24 +84,20 @@ function changPage(pageName) {
 		return requestsNumber == requestsList.length
 	}
 	function writePageCode() {
-		var style = document.getElementById("page--css")
-		style.innerHTML = ""
-		for (var i = 0;i < csses.length;i++) {
-			 var css = document.createElement("style")
-			 css.innerHTML = csses[i]
-			 style.appendChild(css)
-		}
-
-
+		writeCodeIntoElement(document.getElementById("page--css"), css, "style")
+		writeCodeIntoElement(document.getElementById("page--res"), res, "div")
 		
 		document.getElementById("page--content").innerHTML = page
 		
-		var script = document.getElementById("page--js")
-		script.innerHTML = ""
-		for (var i = 0;i < jses.length;i++) {
-			 var js = document.createElement("script")
-			 js.innerHTML = jses[i]
-			 script.appendChild(css)
+		writeCodeIntoElement(document.getElementById("page--js"), js, "script")
+	}
+	function writeCodeIntoElement(element, data, childType) {
+		element.innerHTML = ""
+		for (var i = 0; i < data.length; i++) {
+			var child = document.createElement(childType)
+			child.id = data[i].id
+			child.innerHTML = data[i].content
+			element.appendChild(child)
 		}
 	}
 }

@@ -16,6 +16,9 @@
                 top: 4rem;
                 background: linear-gradient(to bottom right, #00CCFF , #00FFCC);
             }
+            #page--res {
+                display: none;
+            }
         </style>
         <script src="js/adjust-layout.js"></script>
         <script src="js/http.js"></script>
@@ -28,8 +31,9 @@
                     <text id="loading--text">加载中……</text>
                 </div>
             </div>
-		        <div id="page--css"></div>
+		    <div id="page--css"></div>
 			<div id="page--js"></div>
+			<div id="page--res"></div>
 		</div>
         <div id="top-bar--menu" onclick="closeTopBarMenu()">
             <ul id="top-bar--navigation-bar">
