@@ -19,6 +19,10 @@
     border-radius: 0.5rem;
     background: #00000022;
     text-decoration: none;
+    transition: background 0.5s;
+}
+#center--right--jion-in--button:hover {
+    background: #00000044;
 }
 @media only screen and (min-width: 600px) {
     #center {
@@ -48,9 +52,5 @@
     #center--right--jion-in--button {
         font-size: 2.5rem;
         padding: 1rem;
-        color: white;
-        border-radius: 0.5rem;
-        background: #00000022;
-        text-decoration: none;
     }
 }

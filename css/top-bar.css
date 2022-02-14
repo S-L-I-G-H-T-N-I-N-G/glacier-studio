@@ -69,5 +69,6 @@
     .top-bar--navigation-button {
         padding-right: 1rem;
         float: left;
+        transition: background  0.5s;
     }
 }

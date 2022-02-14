@@ -20,8 +20,6 @@ function createChoseWorkNode(work) {
             return work.link
         }
     })()
-    var workCoverArea = document.createElement("div")
-    workCoverArea.classList = ["chose--work--cover--area"]
     var workCover = document.createElement("div")
     workCover.classList = ["chose--work--cover"]
     workCover.style.backgroundImage = "url(" + work.cover + ")"
@@ -30,10 +28,11 @@ function createChoseWorkNode(work) {
     workName.innerText = work.name
 
     var author = work.author
-    var authorElement = document.createElement("a")
+    var authorLink = document.createElement("a")
+    authorLink.target = "_blank"
+    var authorElement = document.createElement("div")
     authorElement.classList = ["chose--work--author"]
-    authorElement.target = "_blank"
-    authorElement.href = "https://shequ.codemao.cn/user/" + work.author.id
+    authorLink.href = "https://shequ.codemao.cn/user/" + work.author.id
     var authorAvatar = document.createElement("img")
     authorAvatar.classList = ["chose--work--author--avatar"]
     authorAvatar.src = author.authorurl
@@ -42,10 +41,10 @@ function createChoseWorkNode(work) {
     authorName.innerText = author.name
 
     workElement.appendChild(workLink)
-    workLink.appendChild(workCoverArea)
-    workCoverArea.appendChild(workCover)
+    workLink.appendChild(workCover)
     workLink.appendChild(workName)
-    workElement.appendChild(authorElement)
+    workElement.appendChild(authorLink)
+    authorLink.append(authorElement)
     authorElement.appendChild(authorAvatar)
     authorElement.appendChild(authorName)
 

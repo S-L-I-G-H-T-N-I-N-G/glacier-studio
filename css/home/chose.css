@@ -10,29 +10,22 @@
     overflow: hidden;
     display: inline-block;
     background-color: #00000022;
+    transition: all 0.5s;
 }
-.chose--work--cover--area {
-    width: 16rem;
-    height: 16rem;
-    overflow: hidden;
+.chose--work:hover {
+    background-color: #00000011;
+    transform: scale(1.1);
 }
 .chose--work--cover {
-    width: 100%;
-    height: 100%;
+    width: 16rem;
+    height: 16rem;
     background-size: cover;
     background-position: center;
-    transition: transform 0.5s;
-}
-.chose--work--cover:hover {
-    transform: scale(1.2)
 }
 .chose--work--name {
     color: white;
     text-align: left;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding: 0.3rem 0.5rem;
 	white-space: nowrap;
 	overflow: hidden;
     text-overflow: ellipsis;
