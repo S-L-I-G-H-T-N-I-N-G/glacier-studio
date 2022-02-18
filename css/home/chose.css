@@ -10,10 +10,12 @@
     overflow: hidden;
     display: inline-block;
     background-color: #00000022;
+    box-shadow: 0px 0px 1rem #00000022;
     transition: all 0.5s;
 }
 .chose--work:hover {
     background-color: #00000011;
+    box-shadow: 0px 0px 0.5rem #00000011;
     transform: scale(1.1);
 }
 .chose--work--cover {
