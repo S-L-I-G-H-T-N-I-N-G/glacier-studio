@@ -20,17 +20,19 @@
     font-size: 2rem;
 }
 #top-bar--menu {
-    top: calc(4rem - 100vh);
-    height: calc(100vh - 4rem);
+    top: 4rem;
     width: 100%;
-    transition: top 1s;
     position: fixed;
-    background-color: #00000088;
+    background: #00000000;
+    transition: background 1s;
 }
 #top-bar--navigation-bar {
-    height: 4rem;
+    width: 100%;
     margin: 0px;
     padding: 0px;
+    top: -4rem;
+    position: fixed;
+    transition: top 0.5s;
     list-style:none;
     color: white;
 }
@@ -63,8 +65,10 @@
         display: none;
     }
     #top-bar--navigation-bar {
+        width: auto;
         float: left;
         margin-left: 4rem;
+        position: static;
     }
     .top-bar--navigation-button {
         padding-right: 1rem;

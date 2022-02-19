@@ -1,4 +1,7 @@
 var menuNutton = document.getElementById("top-bar--menu")
+var navigationBar = document.getElementById("top-bar--navigation-bar")
+var menuAnimationStartTime
+
 function onClickTopBarMenuButton() {
     if (topBarMenuIsOpen()) {
         closeTopBarMenu()
@@ -7,13 +10,23 @@ function onClickTopBarMenuButton() {
     }
 }
 function topBarMenuIsOpen() {
-    return menuNutton.style.top == "4rem"
+    return navigationBar.style.top == "4rem"
 }
 function openTopBarMenu() {
-    menuNutton.style.top = "4rem"
+	menuAnimationStartTime = new Date().getTime()
+	menuNutton.style.height = "calc(100vh - 4rem)"
+    menuNutton.style.background = "#00000088"
+    navigationBar.style.top = "4rem"
 }
 function closeTopBarMenu() {
-    menuNutton.style.top = "calc(4rem - 100vh)"
+	menuAnimationStartTime = new Date().getTime()
+	var time = menuAnimationStartTime
+	setTimeout(function () {
+		if (time == menuAnimationStartTime)
+		    menuNutton.style.height = "0px"
+	}, 1000)
+    menuNutton.style.background = "#00000000"
+    navigationBar.style.top = "-4rem"
 }
 
 big.push(function () {
