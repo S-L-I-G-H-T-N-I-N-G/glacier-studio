@@ -9,12 +9,12 @@
     border-radius: 0.5rem;
     overflow: hidden;
     display: inline-block;
-    background-color: #00000022;
+    background: #FFFFFF22;
     box-shadow: 0px 0px 1rem #00000022;
     transition: all 0.5s;
 }
 .chose--work:hover {
-    background-color: #00000011;
+    background: #FFFFFF44;
     box-shadow: 0px 0px 0.5rem #00000011;
     transform: scale(1.1);
 }
@@ -25,7 +25,6 @@
     background-position: center;
 }
 .chose--work--name {
-    color: white;
     text-align: left;
     padding: 0.3rem 0.5rem;
 	white-space: nowrap;
@@ -45,7 +44,6 @@
     border-radius: 100%;
 }
 .chose--work--author--name {
-    color: white;
     width: 12.5rem;
     line-height: 3rem;
     float: left;

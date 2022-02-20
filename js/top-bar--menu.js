@@ -24,7 +24,7 @@ function closeTopBarMenu() {
 	setTimeout(function () {
 		if (time == menuAnimationStartTime)
 		    menuNutton.style.height = "0px"
-	}, 1000)
+	}, 500)
     menuNutton.style.background = "#00000000"
     navigationBar.style.top = "-4rem"
 }
