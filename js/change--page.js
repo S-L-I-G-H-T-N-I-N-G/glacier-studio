@@ -6,6 +6,7 @@ var requestsLists = {
 	"home": [
 		"css/home/center.css",
 		"css/home/chose.css",
+		"css/home/members.css",
 		"pages/home.html",
 		"js/home/set--chose--work.js",
 		"res/home/chose--work-list.json"

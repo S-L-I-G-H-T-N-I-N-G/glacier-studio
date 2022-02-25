@@ -9,12 +9,10 @@
     border-radius: 0.5rem;
     overflow: hidden;
     display: inline-block;
-    background: #FFFFFF22;
-    box-shadow: 0px 0px 1rem #00000022;
+    background: #FFFFFF44;
     transition: all 0.5s;
 }
 .chose--work:hover {
-    background: #FFFFFF44;
     box-shadow: 0px 0px 0.5rem #00000011;
     transform: scale(1.1);
 }
