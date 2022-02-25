@@ -78,6 +78,7 @@ function changPage(pageName) {
 				res.push(data)
 				break
 		}
+		loadingText.innerText = "加载中……" + requestsNumber / requestsList.length * 100 + "%"
 		if (AllRespondFinished()) writePageCode()
 	}
 	function AllRespondFinished() {
