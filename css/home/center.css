@@ -1,12 +1,14 @@
 #center--icon {
     width: 50%;
     margin-left: 25%;
+    transition: all 0.5s;
 }
 #center--right {
     text-align: center;
 }
 #center--right--title {
     font-size: 10vw;
+    transition: all 0.5s;
 }
 #center--right--jion-in--area {
     margin-top: 1.5rem;
