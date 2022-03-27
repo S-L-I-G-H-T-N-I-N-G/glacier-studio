@@ -1,7 +1,7 @@
 [
   {
     "link": "http://littleyan.cnya.top/",
-    "name": "是little颜的blog鸭",
+    "name": "是little颜的主页鸭",
     "cover": "res/home/little-yan--work--blog--cover.png",
     "author": {
       "id": "3408348",
@@ -21,7 +21,7 @@
   },
   {
     "id": 43338608,
-    "name": "农场大亨(更新一半)",
+    "name": "农场大亨",
     "cover": "https://static.codemao.cn/nemo/SJjnf1thU.jpeg",
     "author": {
       "id": "5580564",
@@ -41,7 +41,7 @@
   },
   {
     "id": 46212561,
-    "name": "开森农场 蜜雪冰城甜蜜蜜",
+    "name": "开森农场",
     "cover": "https://creation.codemao.cn//490/aW9zXzIwMDFfMzQwODM0OF80NjIxMjU2MV8xNjI0NzU3MTY3ODI2XzFzZjMxYW50.jpeg",
     "author": {
       "id": "3408348",
@@ -60,8 +60,18 @@
     }
   },
   {
+    "id": 110724120,
+    "name": "中国象棋",
+    "cover": "https://creation.codemao.cn//490/YW5kXzIwMDFfNjUxOTcxM18xMTA3MjQxMjBfMTYyOTI3ODE1NzA2N19JWGdnanlwZg==.jpg",
+    "author": {
+      "id": "6519713",
+      "name": "SLIGHTNING（冰川工作室）",
+      "authorurl": "https://creation.codemao.cn//490/YW5kXzEwMDFfNjUxOTcxM18wXzE2MzY5OTA1MTk4NDJfc214a1ZWUVQ=.jpg"
+    }
+  },
+  {
     "id": 50063657,
-    "name": "逃跑吧少年(9-1)因多种原因清档",
+    "name": "逃跑吧少年(9-1)",
     "cover": "https://static.codemao.cn/nemo/SklFrRHwBw.jpeg",
     "author": {
       "id": "2620742",
@@ -71,7 +81,7 @@
   },
   {
     "id": 45861080,
-    "name": "3D赛车（250赞开源）",
+    "name": "3D赛车",
     "cover": "https://static.codemao.cn/nemo/SyjPTzhDL.jpeg",
     "author": {
       "id": "6519713",
@@ -81,7 +91,7 @@
   },
   {
     "id": 36867849,
-    "name": "小小首富者2(BUG已修复)",
+    "name": "小小首富者2",
     "cover": "https://static.codemao.cn/nemo/SkLgRzuUI.jpeg",
     "author": {
       "id": "5580564",
@@ -101,7 +111,7 @@
   },
   {
     "id": 49163166,
-    "name": "核弹生存日记(更新中)",
+    "name": "核弹生存日记",
     "cover": "https://static.codemao.cn/nemo/r1JJUJi68.jpeg",
     "author": {
       "id": "5580564",
@@ -117,16 +127,6 @@
       "id": "2620742",
       "name": "ᝰ红包小A",
       "authorurl": "https://creation.codemao.cn//490/YW5kXzEwMDFfMjYyMDc0Ml8wXzE2MTAyNzAzNTQzNTlfZWE0UVBGaHI=.jpg"
-    }
-  },
-  {
-    "id": 110724120,
-    "name": "中国象棋（看简介）（想炸了推荐区）",
-    "cover": "https://creation.codemao.cn//490/YW5kXzIwMDFfNjUxOTcxM18xMTA3MjQxMjBfMTYyOTI3ODE1NzA2N19JWGdnanlwZg==.jpg",
-    "author": {
-      "id": "6519713",
-      "name": "SLIGHTNING（冰川工作室）",
-      "authorurl": "https://creation.codemao.cn//490/YW5kXzEwMDFfNjUxOTcxM18wXzE2MzY5OTA1MTk4NDJfc214a1ZWUVQ=.jpg"
     }
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "id": 40016948,
-    "name": "小小首富者2聊天室-新增小游戏",
+    "name": "小小首富者2聊天室",
     "cover": "https://static.codemao.cn/nemo/HJWew0IbuI.jpeg",
     "author": {
       "id": "5580564",
@@ -161,7 +161,7 @@
   },
   {
     "id": 65045371,
-    "name": "见缝插针（开源）",
+    "name": "见缝插针",
     "cover": "https://creation.codemao.cn//490/aW9zXzIwMDFfMjYyMDc0Ml82NTA0NTM3MV8xNjAzNzExNDAyMTQ3XzAwTWxQR1BG.jpeg",
     "author": {
       "id": "2620742",
@@ -171,7 +171,7 @@
   },
   {
     "id": 60798411,
-    "name": "幽灵弹球（开源）（清空存档）",
+    "name": "幽灵弹球",
     "cover": "https://static.codemao.cn/nemo/HJ3ylU7Bw.jpeg",
     "author": {
       "id": "2620742",
@@ -181,7 +181,7 @@
   },
   {
     "id": 43965766,
-    "name": "多多赚-赚钱app(开源了)",
+    "name": "多多赚-赚钱app",
     "cover": "https://static.codemao.cn/nemo/S1ytgFKvU.jpeg",
     "author": {
       "id": "5580564",
@@ -191,7 +191,7 @@
   },
   {
     "id": 41828770,
-    "name": "推箱子    (求赞)",
+    "name": "推箱子",
     "cover": "https://static.codemao.cn/nemo/HJhqt_e88.jpeg",
     "author": {
       "id": "3134044",

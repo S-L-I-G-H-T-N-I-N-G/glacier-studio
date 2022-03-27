@@ -1,0 +1,22 @@
+.board {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    text-align: center;
+}
+.board--card {
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: inline-block;
+    background: #FFFFFF88;
+    transition: all 0.5s;
+}
+.board--card:hover {
+    box-shadow: 0px 0px 0.5rem #00000022;
+    transform: scale(1.1);
+}
+@media only screen and (min-width: 600px) {
+    .board--title {
+        margin-top: 0%;
+    }
+}

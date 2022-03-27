@@ -1,0 +1,39 @@
+.work {
+    width: 16rem;
+}
+.work--cover {
+    width: 16rem;
+    height: 16rem;
+    background-size: cover;
+    background-position: center;
+}
+.work--name {
+    text-align: left;
+    padding: 0.3rem 0.5rem;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	color:black;
+}
+.work--author {
+    width: 16rem;
+    height: 3rem;
+    text-align: left;
+}
+.work--author--avatar {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 100%;
+}
+.work--author--name {
+    width: 12.5rem;
+    line-height: 3rem;
+    float: left;
+    text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	color:black;
+}

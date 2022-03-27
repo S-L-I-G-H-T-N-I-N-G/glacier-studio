@@ -4,12 +4,14 @@ var ERROR = -1
 
 var requestsLists = {
 	"home": [
+	    "css/home/board.css",
 		"css/home/center.css",
-		"css/home/chose.css",
+		"css/home/works.css",
 		"css/home/members.css",
 		"pages/home.html",
-		"js/home/set--chose--work.js",
-		"res/home/chose--work-list.json"
+		"js/home/set--board.js",
+		"res/home/work-list.json",
+		"res/home/member-list.json"
 	],
 	"join-in": ["pages/join-in.html"]
 }

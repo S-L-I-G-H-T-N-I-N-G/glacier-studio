@@ -1,5 +1,31 @@
-#members {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    text-align: center;
+.member {
+    width: 22rem;
+	padding: 1rem;
+}
+
+.member--avatar {
+    float: left;
+	width: 6rem;
+	height: 6rem;
+	margin-right: 1rem;
+	border-radius: 100%;
+}
+.member--info {
+    width: 15rem;
+    float: left;
+}
+.member--name {
+	color: black;
+	text-align: left;
+}
+.member--introduction {
+	color: black;
+	text-align: left
+}
+.member--rep-works {
+    color: black;
+	text-align: left
+}
+.member--rep-work {
+    color: black;
 }
