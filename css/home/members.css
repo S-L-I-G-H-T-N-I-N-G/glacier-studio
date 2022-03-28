@@ -15,17 +15,14 @@
     float: left;
 }
 .member--name {
-	color: black;
 	text-align: left;
 }
 .member--introduction {
-	color: black;
 	text-align: left
 }
 .member--rep-works {
-    color: black;
 	text-align: left
 }
 .member--rep-work {
-    color: black;
+    color: blue;
 }

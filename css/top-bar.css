@@ -17,6 +17,7 @@
     line-height: 4rem;
     float: left;
     font-size: 2rem;
+	color: white;
 }
 #top-bar--menu {
     top: 4rem;
@@ -35,6 +36,7 @@
     position: fixed;
     transition: top 0.5s;
     list-style:none;
+	color: white;
 }
 .top-bar--navigation-button {
     line-height: 3rem;
@@ -42,6 +44,7 @@
     padding-left: 1rem;
     border-radius: 0.5rem;
     background: #00000022;
+	color: white;
 }
 .top-bar--navigation-button:hover {
     background: #FFFFFF22;

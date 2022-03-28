@@ -9,6 +9,7 @@
 #center--right--title {
     font-size: 10vw;
     transition: all 0.5s;
+	color: white;
 }
 #center--right--jion-in--area {
     margin-top: 1.5rem;
@@ -17,12 +18,13 @@
     font-size: 2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    background: #FFFFFF44;
+    box-shadow: 0px 0px 0.5rem #00000022;
+	color: white;
     text-decoration: none;
     transition: all 0.5s;
 }
 #center--right--jion-in--button:hover {
-    box-shadow: 0px 0px 0.5rem #00000011;
+    box-shadow: 0px 0px 1rem #00000044;
 }
 @media only screen and (min-width: 600px) {
     #center {

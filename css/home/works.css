@@ -13,7 +13,6 @@
 	white-space: nowrap;
 	overflow: hidden;
     text-overflow: ellipsis;
-	color:black;
 }
 .work--author {
     width: 16rem;
@@ -35,5 +34,4 @@
 	white-space: nowrap;
 	overflow: hidden;
     text-overflow: ellipsis;
-	color:black;
 }
