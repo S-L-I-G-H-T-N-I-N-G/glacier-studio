@@ -5,7 +5,7 @@
 - 本网站为纯静态网页，要浏览当前版本，可以开个本地静态网站服务  
 直接打开index.heml会出现跨域请求拦截
 
-- 稳定版官网链接：https://glacier.cnya.top/
+- 稳定版官网链接：https://glacier.tk/
 
 
 ## 源码地址
