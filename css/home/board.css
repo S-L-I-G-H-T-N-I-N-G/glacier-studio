@@ -9,7 +9,6 @@
     overflow: hidden;
     display: inline-block;
     background: #FFFFFF88;
-    transition: all 0.5s;
 }
 .board--card:hover {
     box-shadow: 0px 0px 1rem #00000044;

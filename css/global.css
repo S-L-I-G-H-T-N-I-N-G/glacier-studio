@@ -1,6 +1,7 @@
 * {
     word-break:break-all;
 	color: black;
+    transition: all 0.5s;
 }
 body {
     margin: 0;

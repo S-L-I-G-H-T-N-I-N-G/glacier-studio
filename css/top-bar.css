@@ -26,7 +26,6 @@
     position: fixed;
     background: #00000000;
     pointer-events: none;
-    transition: background 0.5s;
 }
 #top-bar--navigation-bar {
     width: 100%;
@@ -34,7 +33,6 @@
     padding: 0px;
     top: -4rem;
     position: fixed;
-    transition: top 0.5s;
     list-style:none;
 	color: white;
 }
@@ -45,11 +43,14 @@
     border-radius: 0.5rem;
     background: #00000022;
 	color: white;
+    transition: background 0.5s, padding 0.5s;
 }
 .top-bar--navigation-button:hover {
     background: #FFFFFF22;
 }
 .top-bar--navigation-button--choice {
+    line-height: 2.8rem;
+    padding-left: 0.9rem;
     border-style: solid;
     border-width: 0.1rem;
     background: #FFFFFF44;
@@ -76,6 +77,9 @@
     .top-bar--navigation-button {
         padding-right: 1rem;
         float: left;
-        transition: background  0.5s;
+    }
+    .top-bar--navigation-button--choice {
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
     }
 }

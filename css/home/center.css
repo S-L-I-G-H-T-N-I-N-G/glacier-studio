@@ -1,14 +1,12 @@
 #center--icon {
     width: 50%;
     margin-left: 25%;
-    transition: all 0.5s;
 }
 #center--right {
     text-align: center;
 }
 #center--right--title {
     font-size: 10vw;
-    transition: all 0.5s;
 	color: white;
 }
 #center--right--jion-in--area {
@@ -21,7 +19,6 @@
     box-shadow: 0px 0px 0.5rem #00000022;
 	color: white;
     text-decoration: none;
-    transition: all 0.5s;
 }
 #center--right--jion-in--button:hover {
     box-shadow: 0px 0px 1rem #00000044;
