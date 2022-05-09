@@ -6,13 +6,16 @@
 }
 @keyframes loading--circle--change-color {
     0% {
-        background: white;
+        background: #00CCFF;
     }
     25% {
-        background: white;
+        background: #00CCFF;
+    }
+    50% {
+        background: #999999;
     }
     75% {
-        background: #00CCFF;
+        background: #999999;
     }
     100% {
         background: #00CCFF;
@@ -22,10 +25,8 @@
     width: 3rem;
     height: 3rem;
     border-radius: 100%;
-    animation: loading--circle--change-color 0.5s linear 0s infinite alternate;
-    background: white;
+    animation: loading--circle--change-color 1s linear 0s infinite normal;
 }
 #loading--text {
     font-size: 3rem;
-	color: white;
 }

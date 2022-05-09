@@ -9,12 +9,9 @@
         <link rel="stylesheet" href="css/loading.css">
         <style>
             #page--content {
-                overflow-y: auto;
                 width: 100%;
-                position: fixed;
                 top: 4rem;
                 bottom: 0rem;
-                background-color: #F5F5F5;
             }
             #page--res {
                 display: none;
@@ -24,6 +21,12 @@
         <script src="js/http.js"></script>
     </head>
     <body>
+        <div id="top-bar">
+            <img id="top-bar--menu--button" width="4rem" height="4rem"
+            src="res/svg/top-bar--menu--button.svg" alt="菜单按钮"
+            onclick="onClickTopBarMenuButton()">
+            <text id="top-bar--title">冰川工作室</text>
+        </div>
 		<div id="page">
             <div id="page--content">
                 <div id="loading">
@@ -44,14 +47,8 @@
                     加入
                 </li>
             </ul>
-            <script src="js/change--page.js"></script>
-        </div>
-        <div id="top-bar">
-            <img id="top-bar--menu--button" width="4rem" height="4rem"
-            src="res/svg/top-bar--menu--button.svg" alt="菜单按钮"
-            onclick="onClickTopBarMenuButton()">
-            <text id="top-bar--title">冰川工作室</text>
             <script src="js/top-bar--menu.js"></script>
+            <script src="js/change--page.js"></script>
         </div>
         <script>
             adjustLayoutFirstTime()
