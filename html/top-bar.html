@@ -1,0 +1,20 @@
+<div id="top-bar">
+    <img id="top-bar--menu--button" width="4rem" height="4rem"
+    src="res/svg/top-bar--menu--button.svg" alt="菜单按钮"
+    onclick="onClickTopBarMenuButton()">
+    <text id="top-bar--title">冰川工作室</text>
+</div>
+<div id="top-bar--menu" onclick="closeTopBarMenu()">
+    <ul id="top-bar--nav-bar">
+        <li id="top-bar--nav-button--home" class="top-bar--nav-button" onclick="changPage('home')">
+            主页
+        </li>
+        <li id="top-bar--nav-button--join-in" class="top-bar--nav-button" onclick="changPage('join-in')">
+            加入
+        </li>
+    </ul>
+</div>
+<script src="../js/top-bar--menu.js"></script>
+<script>
+    adjustLayoutFirstTime()
+</script>

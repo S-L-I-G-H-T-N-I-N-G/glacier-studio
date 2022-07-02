@@ -1,5 +1,5 @@
-var menu = document.getElementById("top-bar--menu")
-var navigationBar = document.getElementById("top-bar--navigation-bar")
+var menu = $("#top-bar--menu")
+var navBar = $("#top-bar--nav-bar")
 
 function onClickTopBarMenuButton() {
     if (topBarMenuIsOpen()) {
@@ -9,23 +9,21 @@ function onClickTopBarMenuButton() {
     }
 }
 function topBarMenuIsOpen() {
-    return navigationBar.style.top == "4rem"
+    return menu.css("pointer-events") == "auto"
 }
 function openTopBarMenu() {
-    menu.style.pointerEvents = "auto"
-    menu.style.background = "#00000088"
-    navigationBar.style.top = "4rem"
+    menu.css({"pointer-events": "auto", "background": "#00000088"})
+    navBar.css("top", "4rem")
 }
 function closeTopBarMenu() {
-    menu.style.pointerEvents = "none"
-    menu.style.background = "#00000000"
-    navigationBar.style.top = "-4rem"
+    menu.css({"pointer-events": "none", "background": "#00000000"})
+    navBar.css("top", "-4rem")
 }
 
 big.push(function () {
-    document.getElementById("top-bar").appendChild(document.getElementById("top-bar--navigation-bar"))
+    $("#top-bar").append($("#top-bar--nav-bar"))
     closeTopBarMenu()
 })
 small.push(function () {
-    document.getElementById("top-bar--menu").appendChild(document.getElementById("top-bar--navigation-bar"))
+    $("#top-bar--menu").append($("#top-bar--nav-bar"))
 })
