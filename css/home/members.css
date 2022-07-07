@@ -20,12 +20,12 @@
 .member--introduction {
 	text-align: left
 }
-.member--rep-work {
+.member--rep-works {
 	text-align: left
 }
-.member--rep-work--link {
+.member--rep-work {
     color: blue;
 }
-.member--rep-work--link:hover {
+.member--rep-work:hover {
 	text-decoration: underline;
 }

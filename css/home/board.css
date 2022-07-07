@@ -10,6 +10,7 @@
     display: inline-block;
     background-color: #FFF;
     border:0.1rem solid #00000022;
+    cursor: pointer;
 }
 .board--card:hover {
     background-color: #EEE;

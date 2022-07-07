@@ -51,6 +51,7 @@
     color: white;
     background: #00000022;
     transition: padding 0.5s;
+    cursor: default;
 }
 .top-bar--nav-button:hover {
     background: #00000011;

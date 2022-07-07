@@ -4,32 +4,38 @@
         "avatar": "https://creation.codemao.cn/490/aW9zXzEwMDFfNTU4MDU2NF8wXzE2MDQ1OTIyNjcyNjdfdk0xeHQ5ZVo.jpeg",
         "homepage": "https://shequ.codemao.cn/user/5580564",
         "introduction": "冰川工作室室长",
-        "repwork":
-        {
-            "name": "农场大亨",
-            "link": "https://shequ.codemao.cn/work/43338608"
-        }
+        "repworks":
+        [
+            {
+                "name": "农场大亨",
+                "link": "https://shequ.codemao.cn/work/43338608"
+            }
+        ]
     },
     {
         "name": "SLIGHTNING（冰川工作室）",
-        "avatar": "https://creation.codemao.cn/490/YW5kXzEwMDFfNjUxOTcxM18wXzE2MzY5OTA1MTk4NDJfc214a1ZWUVQ=.jpg",
+        "avatar": "https://slightning.tk/src/SLIGHTNING/avatar.png",
         "homepage": "https://slightning.tk/",
         "introduction": "各种技术多少知道点，没一样精通",
-        "repwork":
-        {
-            "name": "冰川工作室官网",
-            "link": "https://glacier.tk/"
-        }
+        "repworks":
+        [
+            {
+                "name": "冰川工作室官网",
+                "link": "https://glacier.tk/"
+            }
+        ]
     },
     {
         "name": "little颜",
         "avatar": "https://cdn-community.codemao.cn/47/community/d2ViXzEwMDFfMzQwODM0OF8zNDA4MzQ4XzE2NTI5NjA2NTI1MzdfNGQwMzZmNzg.jpeg",
         "homepage": "https://www.littleyan.tk",
         "introduction": "会网站开发、Python",
-        "repwork":
-        {
-            "name": "开森农场",
-            "link": "https://shequ.codemao.cn/work/46212561"
-        }
+        "repworks":
+        [
+            {
+                "name": "开森农场",
+                "link": "https://shequ.codemao.cn/work/46212561"
+            }
+        ]
     }
 ]
