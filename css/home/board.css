@@ -9,12 +9,12 @@
     overflow: hidden;
     display: inline-block;
     background-color: #FFF;
-    border:0.1rem solid #00000022;
+    border: 0.1rem solid #00000022;
     cursor: pointer;
 }
 .board--card:hover {
     background-color: #EEE;
-    border:0.1rem solid #00000055;
+    border: 0.1rem solid #00000055;
 }
 @media only screen and (min-width: 600px) {
     .board--title {

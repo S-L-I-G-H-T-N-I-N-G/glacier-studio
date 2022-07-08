@@ -3,7 +3,7 @@
         <img id="center--icon" src="res/icon/icon.svg" alt="冰川工作室图标">
     </div>
     <div id="center--right">
-        <a href="" id="center--right--title">冰川工作室</a>
+        <div href="" id="center--right--title">冰川工作室</div>
         <div id="center--right--jion-in--area">
             <text id="center--right--jion-in--button" class="board--card" onclick="changPage('join-in')">立即加入→</text>
         </div>
@@ -12,25 +12,25 @@
 <div id="works" class="board">
     <h2 class="board--title">精选作品</h2>
     <div class="board--card work" v-for="work in data">
-        <a target="_blank" :href="work.link">
+        <div target="_blank" :data-link="work.link">
             <div class="work--cover" :style="'background-image: url(&quot;' + work.cover + '&quot;);'"></div>
             <div class="work--name">{{work.name}}</div>
-        </a>
-        <a target="_blank" :href="work.author.homepage">
+        </div>
+        <div target="_blank" :data-link="work.author.homepage">
             <img class="work--author--avatar" :src="work.author.avatar">
             <div class="work--author--name">{{work.author.name}}</div>
-        </a>
+        </div>
     </div>
 </div>
 <div id="members" class="board">
     <h2 class="board--title">优秀成员</h2>
-    <div class="board--card member" @click="if (document.elementFromPoint(event.clientX, event.clientY).tagName != 'A') open(member.homepage, '_blank')" v-for="member in data">
+    <div class="board--card member" :data-link="member.homepage" v-for="member in data">
         <img class="member--avatar" :src="member.avatar">
         <div class="member--info">
             <div class="member--name">{{member.name}}</div>
             <div class="member--introduction">简介：{{member.introduction}}</div>
             <div class="member--rep-works">
-                代表作：<a class="member--rep-work" target="_blank" :href="repwork.link" v-for="repwork in member.repworks">{{repwork.name}}</a>
+                代表作：<span class="member--rep-work" :data-link="repwork.link" :title="repwork.link" v-for="repwork in member.repworks">{{repwork.name}}</span>
             </div>
         </div>
     </div>

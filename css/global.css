@@ -1,6 +1,8 @@
 * {
     word-break:break-all;
+    user-select: none;
 	color: black;
+    -webkit-tap-highlight-color:#00000000
 }
 body {
     margin: 0;
@@ -8,5 +10,4 @@ body {
 }
 a {
     text-decoration: none;
-    -webkit-tap-highlight-color:#00000000
 }
