@@ -1,4 +1,4 @@
-#loading {
+#loading--area {
     height: calc(100vh - 4rem);
     display: flex;
     align-items: center;
@@ -21,12 +21,10 @@
         background: #00CCFF;
     }
 }
-#loading--circle {
-    width: 3rem;
-    height: 3rem;
+#loading {
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
     border-radius: 100%;
     animation: loading--circle--change-color 1s linear 0s infinite normal;
-}
-#loading--text {
-    font-size: 3rem;
 }
