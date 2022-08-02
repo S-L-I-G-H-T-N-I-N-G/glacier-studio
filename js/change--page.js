@@ -6,10 +6,21 @@ function changPage(pageName, element) {
     lastChangPageTime = startTime
     $("#loading").remove()
 
+    function changNavButton() {
+        var navButtons = $(".top-bar--nav-button")
+        for (var i = 0;i < navButtons.length;i++) {
+            var button = $(navButtons[i])
+            button.removeClass("top-bar--nav-button--choice")
+            if (button.attr("id").includes(pageName))
+                button.addClass("top-bar--nav-button--choice")
+        }
+    }
+
     function success(data) {
         if (startTime == lastChangPageTime) {
             $("#page--content").html(data)
             $("#loading").remove()
+            changNavButton()
         }
     }
 
@@ -21,12 +32,4 @@ function changPage(pageName, element) {
     element.prepend(loading)
     history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
     load("/html/" + pageName + ".html", success, error)
-
-    var tnavButtons = $(".top-bar--nav-button")
-    for (var i = 0;i < tnavButtons.length;i++) {
-        var button = $(tnavButtons[i])
-        button.removeClass("top-bar--nav-button--choice")
-        if (button.attr("id").includes(pageName))
-            button.addClass("top-bar--nav-button--choice")
-    }
 }
