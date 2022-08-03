@@ -19,14 +19,19 @@ function changPage(pageName, element) {
     function success(data) {
         if (startTime == lastChangPageTime) {
             $("#loading").remove()
+            $("#error").html(null)
             changNavButton()
             $("#page--content").html(data)
         }
     }
 
-    function error() {
-        alert("页面" + pageName + "加载失败")
-        $("#loading").remove()
+    function error(list) {
+        if (startTime == lastChangPageTime) {
+            $("#loading").remove()
+            $("#error").html("<h2>错误：页面 " + pageName + " 加载失败</h2>")
+            for (var i = 0; i < list.length; i++)
+                $("#error").append($("<p>文件 " + list[i].url + " 加载失败，错误码："+ list[i].status + "</p>"))
+        }
     }
 
     element.prepend(loading)

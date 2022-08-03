@@ -1,4 +1,20 @@
-function load(url, allsuccess, error) {
+function load(url, successback, errorback) {
+    var failedList = []
+    var fileNum = 0
+    var successed = 0
+    var finished = 0
+
+    function ifFinish(element) {
+        if (failedList.length != 0) errorback(failedList)
+        else if (fileNum == successed) successback(element)
+    }
+
+    function error(url, status) {
+        finished++
+        failedList.push({url: url, status: status})
+        ifFinish()
+    }
+
     $.get({
         url: url,
         dataType: "text",
@@ -44,23 +60,26 @@ function load(url, allsuccess, error) {
                         dataType: "text",
                         success: function (data) {
                             finished++
+                            successed++
                             success(e, data)
                             e.attr(attr, null)
-                            if (fileNum == finished) allsuccess(element)
+                            ifFinish(element)
                         },
-                        error: error
+                        error: function (xhr) {
+                            error(e.attr(attr), xhr.status)
+                        }
                     })
                 }
             }
 
-            var fileNum = 0
-            var finished = 0
             var element =$(data)
 
             loadAdditionalFiles(element, error)
-            if (fileNum == 0) allsuccess(element)
+            ifFinish(element)
         },
-        error: error
+        error: function (xhr) {
+            error(url, xhr.status)
+        }
     })
 }
 
