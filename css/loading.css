@@ -4,25 +4,18 @@
     align-items: center;
     justify-content: center;
 }
-@keyframes loading--circle--change-color {
-    0% {
-        background: #00CCFF;
+@keyframes loading--circle--animation {
+    from {
+        transform: rotate(0deg);
     }
-    25% {
-        background: #00CCFF;
-    }
-    50% {
-        background: #999999;
-    }
-    75% {
-        background: #999999;
-    }
-    100% {
-        background: #00CCFF;
+    to {
+        transform: rotate(360deg);
     }
 }
 #loading {
     display: inline-block;
     border-radius: 100%;
-    animation: loading--circle--change-color 1s linear 0s infinite normal;
+    border: 4px solid #00000000;
+    border-bottom: 4px solid black;
+    animation: loading--circle--animation 400ms linear 0s infinite normal;
 }
