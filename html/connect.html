@@ -1,0 +1,44 @@
+<div id="root">
+    <link rel="stylesheet" href="/css/connect.css">
+    <link rel="src" href="https://api.glacier.tk/message/get.php">
+    <ul>
+        <li>QQ：
+            <ul>
+                <li>室长：3527644281</li>
+                <li>群：1045067784</li>
+            </ul>
+        </li>
+        <li>编程猫：<span class="link" data-link="https://shequ.codemao.cn/work_shop/640">https://shequ.codemao.cn/work_shop/640</span>
+        </li>
+        <li id="send-message">留言：
+            <form action="https://api.glacier.tk/message/post.php" method="post">
+                昵称<br>
+                <input type="text" placeholder="（必填）请填写昵称" name="name" maxlength="255" required="required"><br>
+                头像<br>
+                <input type="url" placeholder="请填写图片链接" name="avatarurl" maxlength="255"><br>
+                邮箱<br>
+                <input type="email" placeholder="请填写邮箱" name="email" maxlength="255"><br>
+                网站<br>
+                <input type="url" placeholder="请填写个人网站链接" name="url" maxlength="255"><br>
+                内容<br>
+                <textarea placeholder="（必填）请填写内容" name="content" maxlength="1048575" required="required" rows="8"></textarea>
+                <input type="submit" value="发送">
+            </form>
+            已有 {{data.length}} 条留言
+            <div id="message" v-for="message in data">
+                <img class="message--avatar" :src="message.avatarurl || '/res/icon/icon.svg'">
+                <div style="width: 100%">
+                    <div class="message--info">
+                        <div style="cursor: pointer;" :data-link="message.url || 'https://glacier.tk/'">
+                            <span class="message--info--name">{{message.name}}</span>
+                            <span class="message--info--email" v-if="message.email != null">（{{message.email}}）</span>
+                        </div>
+                        <span class="message--info--datetime">{{message.datetime}}</span>
+                    </div>
+                    <div class="message--content">{{message.content}}</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <script src="/js/connect/set--message.js"></script>
+</div>

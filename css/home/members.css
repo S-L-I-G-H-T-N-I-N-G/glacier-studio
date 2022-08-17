@@ -1,18 +1,12 @@
 .member {
-    width: 22rem;
+	width: 14rem;
 	padding: 1rem;
 }
-
 .member--avatar {
-    float: left;
 	width: 6rem;
 	height: 6rem;
 	margin-right: 1rem;
 	border-radius: 100%;
-}
-.member--info {
-    width: 15rem;
-    float: left;
 }
 .member--name {
 	text-align: left;
@@ -28,4 +22,16 @@
 }
 .member--rep-work:hover {
 	text-decoration: underline;
+}
+@media only screen and (min-width: 600px) {
+	.member {
+		width: 22rem;
+	}
+	.member--avatar {
+		float: left;
+	}
+	.member--info {
+		float: left;
+		width: 15rem;
+	}
 }

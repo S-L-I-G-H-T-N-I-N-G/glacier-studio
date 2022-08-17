@@ -1,0 +1,56 @@
+#root {
+    margin-inline: 5vw;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.link:hover {
+    text-decoration: underline;
+}
+.link {
+    color: blue;
+    cursor: pointer;
+}
+input, textarea {
+    font-size: inherit;
+    width: 100%;
+    max-width: 64rem;
+    resize: vertical;
+}
+button {
+    font-size: inherit;
+}
+#message {
+    display: flex;
+    margin-block: 1rem;
+}
+.message--avatar {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border-radius: 100%;
+}
+.message--info {
+    line-height: 1em;
+    justify-content: space-between;
+}
+.message--info--email {
+    font-size: 0.5em;
+}
+.message--info--datetime {
+    font-size: 0.5em;
+}
+.message--content {
+    cursor: text;
+    user-select: text;
+    padding: 4px;
+    background-color: white;
+    border: 0.1rem solid #00000022;
+}
+.message--content:hover {
+    border: 0.1rem solid #000000;
+}
+@media only screen and (min-width: 600px) {
+    .message--info {
+        display: flex;
+    }
+}

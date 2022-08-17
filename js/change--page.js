@@ -25,6 +25,7 @@ function changPage(pageName, element) {
         if (startTime == lastChangPageTime) {
             finish()
             $("#error").html(null)
+            history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
             changNavButton()
             $("#page--content").html(data)
         }
@@ -45,6 +46,5 @@ function changPage(pageName, element) {
         "height": element.css("font-size"),
         "border-bottom-color": element.css("color")
     })
-    history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
     load("/html/" + pageName + ".html", success, error)
 }
