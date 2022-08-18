@@ -10,9 +10,19 @@
     }
   },
   {
-    "link": "https://www.littleyan.tk",
-    "name": "是little颜的主页鸭",
-    "cover": "https://cdn-community.codemao.cn/47/community/d2ViXzEwMDFfMzQwODM0OF8zNDA4MzQ4XzE2NTI5NjA2NTI1MzdfNGQwMzZmNzg.jpeg",
+    "link": "https://lzxyq.tk/",
+    "name": "兰州校园墙",
+    "cover": "/res/img/little-yan--school-wall.png",
+    "author": {
+      "homepage": "https://www.littleyan.tk/",
+      "name": "little颜",
+      "avatar": "https://cdn-community.codemao.cn/47/community/d2ViXzEwMDFfMzQwODM0OF8zNDA4MzQ4XzE2NTI5NjA2NTI1MzdfNGQwMzZmNzg.jpeg"
+    }
+  },
+  {
+    "link": "https://www.bilibili.com/video/BV1GW4y127LM?zw",
+    "name": "智能图像识别器",
+    "cover": "/res/img/little-yan--image-recognizer.jpg",
     "author": {
       "homepage": "https://www.littleyan.tk/",
       "name": "little颜",
@@ -103,16 +113,6 @@
     "link": "https://shequ.codemao.cn/work/46647169",
     "name": "最强训练师",
     "cover": "https://static.codemao.cn/nemo/BkFMkHpiU.jpeg",
-    "author": {
-      "homepage": "https://shequ.codemao.cn/user/5580564",
-      "name": "ᝰ可爱的的腻害",
-      "avatar": "https://creation.codemao.cn//490/aW9zXzEwMDFfNTU4MDU2NF8wXzE2MDQ1OTIyNjcyNjdfdk0xeHQ5ZVo.jpeg"
-    }
-  },
-  {
-    "link": "https://shequ.codemao.cn/work/49163166",
-    "name": "核弹生存日记",
-    "cover": "https://static.codemao.cn/nemo/r1JJUJi68.jpeg",
     "author": {
       "homepage": "https://shequ.codemao.cn/user/5580564",
       "name": "ᝰ可爱的的腻害",
