@@ -5,8 +5,10 @@ function load(url, successback, errorback) {
     var finished = 0
 
     function ifFinish(element) {
-        if (failedList.length != 0) errorback(failedList)
-        else if (fileNum == successed) successback(element)
+        if (finished >= fileNum) {
+            if (failedList.length != 0) errorback(failedList)
+            else successback(element)
+        }
     }
 
     function error(url, status) {

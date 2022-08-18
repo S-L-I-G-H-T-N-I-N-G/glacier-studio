@@ -24,7 +24,6 @@ function changPage(pageName, element) {
     function success(data) {
         if (startTime == lastChangPageTime) {
             finish()
-            $("#error").html(null)
             history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
             changNavButton()
             $("#page--content").html(data)
@@ -32,11 +31,12 @@ function changPage(pageName, element) {
     }
 
     function error(list) {
+        var errorMessage = []
+        for (var i = 0; i < list.length ; i++)
+            errorMessage.push("文件 " + list[i].url + " 加载失败，错误码："+ list[i].status)
+        printError("错误：页面 " + pageName + " 加载失败", errorMessage)
         if (startTime == lastChangPageTime) {
             finish()
-            $("#error").html("<h2>错误：页面 " + pageName + " 加载失败</h2>")
-            for (var i = 0; i < list.length; i++)
-                $("#error").append($("<p>文件 " + list[i].url + " 加载失败，错误码："+ list[i].status + "</p>"))
         }
     }
 

@@ -38,7 +38,7 @@ function writeMessage($conn) {
 
     $sql = 
     "INSERT INTO `message` (`id`, `name`, `avatarurl`, `email`, `url`, `content`, `datetime`)" . 
-    "VALUES ('NULL',$name,$avatarurl, $email, $url, $content, $datetime);";
+    "VALUES (NULL, $name, $avatarurl, $email, $url, $content, $datetime);";
     $conn->query($sql);
 }
 
