@@ -1,3 +1,13 @@
+@keyframes center--animation {
+    from {
+        filter: drop-shadow(-0.5rem -0.5rem 0.5rem);
+        filter: blur(0.5rem);
+        opacity: 0;
+    }
+}
+#center {
+    animation: center--animation 1s;
+}
 #center--icon {
     width: 50%;
     margin-left: 25%;

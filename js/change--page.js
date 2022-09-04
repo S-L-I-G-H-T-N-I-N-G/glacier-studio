@@ -19,6 +19,7 @@ function changPage(pageName, element) {
     function finish() {
         $("#loading").remove()
         closeTopBarMenu()
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
     }
 
     function success(data) {

@@ -2,6 +2,7 @@
     width: 100%;
     position: sticky;
     top: 0;
+    z-index: 1024;
 }
 #top-bar {
     width: 100%;
@@ -23,6 +24,7 @@
     cursor: pointer;
 }
 #top-bar--title {
+    color: black;
     line-height: 4rem;
     float: left;
     font-size: 2rem;

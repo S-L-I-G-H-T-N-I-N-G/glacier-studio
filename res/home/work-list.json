@@ -20,9 +20,9 @@
     }
   },
   {
-    "link": "https://www.bilibili.com/video/BV1GW4y127LM?zw",
+    "link": "https://dl.littleyan.tk/aidetecter",
     "name": "智能图像识别器",
-    "cover": "/res/img/little-yan--image-recognizer.jpg",
+    "cover": "https://img.littleyan.tk/img/aidetecter.png",
     "author": {
       "homepage": "https://www.littleyan.tk/",
       "name": "little颜",
