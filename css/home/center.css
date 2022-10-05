@@ -18,15 +18,11 @@
 #center--right--title {
     font-size: 10vw;
 }
-#center--right--jion-in--area {
-    margin-top: 1.5rem;
-}
 #center--right--jion-in--button {
     font-size: 2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     text-decoration: none;
-    display: inline;
 }
 @media only screen and (min-width: 600px) {
     #center {
@@ -43,15 +39,19 @@
         float: left;
     }
     #center--right {
-        line-height: 20vw;
         height: 40vw;
         float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     #center--right--title {
         font-size: 8vw;
     }
     #center--right--jion-in--area {
         margin-top: 0px;
+        display: flex;
+        justify-content: center;
     }
     #center--right--jion-in--button {
         font-size: 2.5rem;

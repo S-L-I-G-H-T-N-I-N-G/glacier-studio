@@ -11,3 +11,9 @@ body {
 a {
     text-decoration: none;
 }
+.button {
+    transition: background-color 100ms, transform 100ms;
+}
+.button:active {
+    transform: scale(0.9);
+}

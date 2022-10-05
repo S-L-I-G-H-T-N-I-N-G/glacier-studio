@@ -12,13 +12,13 @@
         <div id="center--right">
             <div href="" id="center--right--title">冰川工作室</div>
             <div id="center--right--jion-in--area">
-                <text id="center--right--jion-in--button" class="board--card" onclick="changPage('connect', $('#center--right--jion-in--button'))">立即加入→</text>
+                <div id="center--right--jion-in--button" class="board--card button" onclick="changPage('connect', $('#center--right--jion-in--button'))">立即加入→</div>
             </div>
         </div>
     </div>
     <div id="works" class="board">
         <h2 class="board--title">精选作品</h2>
-        <div class="board--card work" v-for="work in data">
+        <div class="board--card work button" v-for="work in data">
             <div target="_blank" :data-link="work.link">
                 <div class="work--cover" :style="'background-image: url(&quot;' + work.cover + '&quot;);'"></div>
                 <div class="work--name">{{work.name}}</div>
@@ -31,7 +31,7 @@
     </div>
     <div id="members" class="board">
         <h2 class="board--title">优秀成员</h2>
-        <div class="board--card member" :data-link="member.homepage" v-for="member in data">
+        <div class="board--card member button" :data-link="member.homepage" v-for="member in data">
             <img class="member--avatar" :src="member.avatar">
             <div class="member--info">
                 <div class="member--name">{{member.name}}</div>
