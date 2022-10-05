@@ -28,6 +28,7 @@ function changPage(pageName, element) {
             history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
             changNavButton()
             $("#page--content").html(data)
+            updateButtons()
         }
     }
 

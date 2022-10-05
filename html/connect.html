@@ -22,7 +22,7 @@
                 <input type="url" placeholder="请填写个人网站链接" name="url" maxlength="255"><br>
                 内容<br>
                 <textarea placeholder="（必填）请填写内容" name="content" maxlength="1048575" required="required" rows="8"></textarea>
-                <input type="submit" value="发送">
+                <input class="button" type="submit" value="发送">
             </form>
             已有 {{data.length}} 条留言
             <div id="message" v-for="message in data">

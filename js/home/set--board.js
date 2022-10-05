@@ -14,3 +14,4 @@ function setBoards() {
 }
 
 setBoards()
+updateButtons()
