@@ -8,5 +8,6 @@ onclick = function() {
             else break
         } catch { return }
     }
-    open(link, "_blank")
+    this.setTimeout(function () {open(link, "_blank")}, 600)
+    
 }
