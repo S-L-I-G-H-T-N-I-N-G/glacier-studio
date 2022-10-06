@@ -1,14 +1,25 @@
+function buttonMouseLeave() {
+    buttonWaveRetreat($(this))
+}
+
+function buttonMousedown(event) {
+    buttonWaveSwingAway($(this), event.pageX - $(this).offset().left, event.pageY - $(this).offset().top)
+}
+
+function buttonMouseUp() {
+    buttonWaveRetreat($(this))
+}
+
 function updateButtons() {
     var buttons = $(".button")
-    buttons.hover(null, function () {
-        buttonWaveRetreat($(this))
-    })
-    buttons.mousedown(function (event) {
-        buttonWaveSwingAway($(this), event.pageX - $(this).offset().left, event.pageY - $(this).offset().top)
-    })
-    buttons.mouseup(function () {
-        buttonWaveRetreat($(this))
-    })
+
+    buttons.off("touchcancel mouseleave", buttonMouseLeave)
+    buttons.off("vmousedown", buttonMousedown)
+    buttons.off("vmouseup", buttonMouseUp)
+
+    buttons.on("touchcancel mouseleave", buttonMouseLeave)
+    buttons.on("vmousedown", buttonMousedown)
+    buttons.on("vmouseup", buttonMouseUp)
 }
 
 function buttonWaveSwingAway(element, x, y) {

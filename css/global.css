@@ -1,6 +1,6 @@
 * {
     word-break:break-all;
-    user-select: none;
+    /* user-select: none; */
     -webkit-tap-highlight-color:#00000000;
 }
 body {

@@ -24,11 +24,14 @@ function changPage(pageName, element) {
 
     function success(data) {
         if (startTime == lastChangPageTime) {
-            finish()
-            history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
-            changNavButton()
-            $("#page--content").html(data)
-            updateButtons()
+            $("#page--content").slideUp(function () {
+                finish()
+                history.pushState("冰川工作室", "冰川工作室", "/" + pageName)
+                changNavButton()
+                $("#page--content").html(data)
+                updateButtons()
+                $("#page--content").slideDown()
+            })
         }
     }
 

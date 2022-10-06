@@ -17,7 +17,7 @@ function openTopBarMenu() {
 }
 function closeTopBarMenu() {
     menu.css({"pointer-events": "none", "background": "#00000000"})
-    navBar.css("top", "-4rem")
+    navBar.css("top", "-8rem")
 }
 
 big.push(function () {

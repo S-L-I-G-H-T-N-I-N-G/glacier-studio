@@ -42,7 +42,6 @@ button {
 }
 .message--content {
     cursor: text;
-    user-select: text;
     padding: 4px;
     background-color: white;
     border: 0.1rem solid #00000022;

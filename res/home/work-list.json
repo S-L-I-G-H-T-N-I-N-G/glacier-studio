@@ -2,7 +2,7 @@
   {
     "link": "https://glacier.tk/",
     "name": "冰川工作室官网",
-    "cover": "res/icon/icon.svg",
+    "cover": "/res/icon/icon.svg",
     "author": {
       "homepage": "https://slightning.tk/",
       "name": "SLIGHTNING（冰川工作室）",
