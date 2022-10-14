@@ -1,6 +1,5 @@
 * {
     word-break:break-all;
-    /* user-select: none; */
     -webkit-tap-highlight-color:#00000000;
 }
 body {
@@ -12,8 +11,5 @@ a {
     text-decoration: none;
 }
 .button {
-    transition: background-color 100ms, transform 100ms;
-}
-.button:active {
-    transform: scale(0.9);
+    transition: background-color 100ms;
 }

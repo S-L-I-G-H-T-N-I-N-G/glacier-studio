@@ -38,8 +38,8 @@ function changPage(pageName, element) {
     function error(list) {
         var errorMessage = []
         for (var i = 0; i < list.length ; i++)
-            errorMessage.push("文件 " + list[i].url + " 加载失败，错误码："+ list[i].status)
-        printError("错误：页面 " + pageName + " 加载失败", errorMessage)
+            errorMessage.push(`文件 ${list[i].url} 加载失败，错误码：${list[i].status}`)
+        printError(`错误：页面 ${pageName} 加载失败`, errorMessage)
         if (startTime == lastChangPageTime) {
             finish()
         }

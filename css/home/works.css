@@ -8,30 +8,27 @@
     background-position: center;
 }
 .work--name {
-    text-align: left;
     padding: 0.3rem 0.5rem;
-	white-space: nowrap;
+    color: black;
+    text-align: left;
 	overflow: hidden;
+	white-space: nowrap;
     text-overflow: ellipsis;
 }
 .work--author {
-    width: 16rem;
-    height: 3rem;
-    text-align: left;
+    display: flex;
 }
 .work--author--avatar {
-    float: left;
     width: 2rem;
     height: 2rem;
     margin: 0.5rem;
     border-radius: 100%;
 }
 .work--author--name {
-    width: 12.5rem;
+    max-width: 12.5rem;
     line-height: 3rem;
-    float: left;
-    text-align: left;
-	white-space: nowrap;
+    color: black;
 	overflow: hidden;
+	white-space: nowrap;
     text-overflow: ellipsis;
 }

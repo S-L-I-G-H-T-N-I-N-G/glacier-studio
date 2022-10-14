@@ -12,32 +12,32 @@
         <div id="center--right">
             <div href="" id="center--right--title">冰川工作室</div>
             <div id="center--right--jion-in--area">
-                <div id="center--right--jion-in--button" class="board--card button" onclick="changPage('connect', $('#center--right--jion-in--button'))">立即加入→</div>
+                <div id="center--right--jion-in--button" class="board--card button" onclick="changPage('join-in', $('#center--right--jion-in--button'))">立即加入→</div>
             </div>
         </div>
     </div>
     <div id="works" class="board">
         <h2 class="board--title">精选作品</h2>
         <div class="board--card work button" v-for="work in data">
-            <div target="_blank" :data-link="work.link">
+            <a target="_blank" :href="work.link">
                 <div class="work--cover" :style="'background-image: url(&quot;' + work.cover + '&quot;);'"></div>
                 <div class="work--name">{{work.name}}</div>
-            </div>
-            <div target="_blank" :data-link="work.author.homepage">
+            </a>
+            <a class="work--author" target="_blank" :href="work.author.homepage">
                 <img class="work--author--avatar" :src="work.author.avatar">
                 <div class="work--author--name">{{work.author.name}}</div>
-            </div>
+            </a>
         </div>
     </div>
     <div id="members" class="board">
         <h2 class="board--title">优秀成员</h2>
-        <div class="board--card member button" :data-link="member.homepage" v-for="member in data">
-            <img class="member--avatar" :src="member.avatar">
+        <div class="board--card member button" v-for="member in data">
+            <a target="_blank" :href="member.homepage"><img class="member--avatar" :src="member.avatar"></a>
             <div class="member--info">
-                <div class="member--name">{{member.name}}</div>
+                <a target="_blank" :href="member.homepage"><div class="member--name">{{member.name}}</div></a>
                 <div class="member--introduction">简介：{{member.introduction}}</div>
                 <div class="member--rep-works">
-                    代表作：<span class="member--rep-work" :data-link="repwork.link" v-for="repwork in member.repworks">{{repwork.name}}</span>
+                    代表作：<a class="member--rep-work" target="_blank" :href="repwork.link" v-for="repwork in member.repworks">{{repwork.name}}</a>
                 </div>
             </div>
         </div>

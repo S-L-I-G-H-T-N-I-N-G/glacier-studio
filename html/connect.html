@@ -3,17 +3,27 @@
     <link rel="src" href="https://api.glacier.tk/message/get.php">
     <div id="tabs">
         <ul>
-            <li class="button"><a href="#qq">QQ</a></li>
-            <li class="button"><a href="#codemao">编程猫</a></li>
             <li class="button"><a href="#send-message">留言</a></li>
+            <li class="button"><a href="#other">其他</a></li>
         </ul>
-        <div id="qq">
+        <div id="other">
             <ul>
-                <li>室长：3527644281</li>
-                <li>群：1045067784</li>
+                <li>QQ
+                    <ul>
+                        <li>群：1045067784<br>
+                            <img width="256" src="/res/img/connect/qq/group.png" alt="">
+                        </li>
+                        <li>室长：3527644281</li>
+                        <li>副室长0：3049928398</li>
+                        <li>副室长1：3157420882<br>
+                            <img width="256" src="https://slightning.tk/src/SLIGHTNING/contact/qq.jpg" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li><a class="link" target="_blank" href="https://github.com/glacier-studio">GitHub</a></li>
+                <li><a class="link" target="_blank" href="https://shequ.codemao.cn/work_shop/640">编程猫</a></li>
+                
             </ul>
-        </div>
-        <div id="codemao"><span class="link" data-link="https://shequ.codemao.cn/work_shop/640">https://shequ.codemao.cn/work_shop/640</span>
         </div>
         <div id="send-message">
             <form action="https://api.glacier.tk/message/post.php" method="post">
@@ -34,10 +44,10 @@
                 <img class="message--avatar" :src="message.avatarurl || '/res/icon/icon.svg'">
                 <div style="width: 100%">
                     <div class="message--info">
-                        <div style="cursor: pointer;" :data-link="message.url || 'https://glacier.tk/'">
+                        <a target="_blank" :href="message.url || 'https://glacier.tk/'">
                             <span class="message--info--name">{{message.name}}</span>
                             <span class="message--info--email" v-if="message.email != null">（{{message.email}}）</span>
-                        </div>
+                        </a>
                         <span class="message--info--datetime">{{message.datetime}}</span>
                     </div>
                     <div class="message--content">{{message.content}}</div>

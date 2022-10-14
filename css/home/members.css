@@ -10,6 +10,7 @@
 }
 .member--name {
 	text-align: left;
+	color: black;
 }
 .member--introduction {
 	text-align: left
@@ -19,7 +20,6 @@
 }
 .member--rep-work {
 	margin-inline: 0.5ch;
-    color: blue;
 }
 .member--rep-work:hover {
 	text-decoration: underline;

@@ -9,15 +9,15 @@ function onClickTopBarMenuButton() {
     }
 }
 function topBarMenuIsOpen() {
-    return menu.css("pointer-events") == "auto"
+    return menu.hasClass("top-bar--menu--open")
 }
 function openTopBarMenu() {
-    menu.css({"pointer-events": "auto", "background": "#00000088"})
-    navBar.css("top", "4rem")
+    menu.addClass("top-bar--menu--open")
+    navBar.addClass("top-bar--nav-bar--open")
 }
 function closeTopBarMenu() {
-    menu.css({"pointer-events": "none", "background": "#00000000"})
-    navBar.css("top", "-8rem")
+    menu.removeClass("top-bar--menu--open")
+    navBar.removeClass("top-bar--nav-bar--open")
 }
 
 big.push(function () {
