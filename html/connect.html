@@ -1,9 +1,9 @@
 <div id="root">
     <link rel="stylesheet" href="/css/connect.css">
-    <link rel="src" href="https://api.glacier.tk/message/get.php">
+    <!-- <link rel="src" href="https://api.glacier.tyser.bf/message/get.php"> -->
     <div id="tabs">
         <ul>
-            <li class="button"><a href="#send-message">留言</a></li>
+            <!-- <li class="button"><a href="#send-message">留言</a></li> -->
             <li class="button"><a href="#other">其他</a></li>
         </ul>
         <div id="other">
@@ -14,19 +14,18 @@
                             <img width="256" src="/res/img/connect/qq/group.png" alt="">
                         </li>
                         <li>室长：3527644281</li>
-                        <li>副室长0：3049928398</li>
-                        <li>副室长1：3157420882<br>
-                            <img width="256" src="https://slightning.tk/res/SLIGHTNING/contact/qq.jpg" alt="">
+                        <li><a href="https://slightning.tyser.bf/">副室长</a>
                         </li>
                     </ul>
                 </li>
                 <li><a class="link" target="_blank" href="https://github.com/glacier-studio">GitHub</a></li>
                 <li><a class="link" target="_blank" href="https://shequ.codemao.cn/work_shop/640">编程猫</a></li>
+                <li><a class="link" target="_blank" href="https://40code.com/#page=studio&id=629">40code</a></li>
                 
             </ul>
         </div>
-        <div id="send-message">
-            <form action="https://api.glacier.tk/message/post.php" method="post">
+        <!-- <div id="send-message">
+            <form action="https://api.glacier.tyser.bf/message/post.php" method="post">
                 昵称<br>
                 <input type="text" placeholder="（必填）请填写昵称" name="name" maxlength="255" required="required"><br>
                 头像<br>
@@ -44,7 +43,7 @@
                 <img class="message--avatar" :src="message.avatarurl || '/res/icon/icon.svg'">
                 <div style="width: 100%">
                     <div class="message--info">
-                        <a target="_blank" :href="message.url || 'https://glacier.tk/'">
+                        <a target="_blank" :href="message.url || 'https://glacier.tyser.bf/'">
                             <span class="message--info--name">{{message.name}}</span>
                             <span class="message--info--email" v-if="message.email != null">（{{message.email}}）</span>
                         </a>
@@ -53,8 +52,8 @@
                     <div class="message--content">{{message.content}}</div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
-    <script src="/js/connect/set--message.js"></script>
+    <!-- <script src="/js/connect/set--message.js"></script> -->
     <script src="/js/connect/set--tab.js"></script>
 </div>
